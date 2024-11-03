@@ -12,36 +12,43 @@
   </head>
   <body class="py-12">
     <header>
-      <nav class="flex items-center justify-around">
-        <span class="font-poppins text-blue-900 text-[20px] font-bold"
+      <!-- nav bar with hamburger icon -->
+      <nav class="flex items-center justify-around font-dm_sans">
+        <span class="font-poppins text-nav_span text-[20px] font-bold"
           >StartUp 3</span
         >
         <ul
-          class="flex items-center justify-between gap-7 text-black/30 font-medium"
+          class="flex items-center justify-between gap-7 ms-52 text-black/30 font-medium"
         >
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Shop</a></li>
-          <i class="bx bx-search"></i>
+          <li class="hidden md:block"><a href="#">Home</a></li>
+          <li class="hidden md:block"><a href="#">Features</a></li>
+          <li class="hidden md:block"><a href="#">Blog</a></li>
+          <li class="hidden md:block"><a href="#">Shop</a></li>
+          <div class="hidden md:block"><i class="bx bx-search"></i></div>
         </ul>
-        <div>
-          <button class="me-8 text-black/30 font-medium">Sign In</button>
+        <div class="flex">
+          <button class="me-8 text-black/30 font-medium hidden md:block">
+            Sign In
+          </button>
           <button
-            class="w-[100px] h-[40px] rounded-full bg-teal-300 text-white border"
+            class="w-[100px] h-[40px] rounded-full bg-teal-300 text-white border hidden md:block"
           >
             Sign Up
           </button>
+          <div class="sm:block md:hidden">
+            <i class="bx bx-menu text-[30px]"></i>
+          </div>
         </div>
       </nav>
-      <section class="mt-20">
+      <section class="mt-40 md:mt-20 font-dm_sans">
+        <!-- main hero section -->
         <h1
-          class="text-[70px] leading-none w-full text-center mb-10 font-[600] text-blue-900"
+          class="text-[70px] leading-none w-full text-center mb-10 font-[600] text-nav_span"
         >
           Startup Framework
         </h1>
         <p
-          class="leading-7 w-[25rem] text-center ms-auto me-auto mb-16 text-black/30 line-clamp-5 font-semibold ]"
+          class="leading-7 w-[27rem] text-center ms-auto me-auto mb-16 text-black/30 line-clamp-5 font-semibold ]"
         >
           We made it so beautiful and simple. It combines landings, pages, blogs
           and shop screens. It is definitely the tool you need in your
@@ -49,10 +56,14 @@
         </p>
         <div class="w-52 m-auto">
           <button
-            class="w-[270px] h-[60px] rounded-full bg-teal-300 text-white border mb-4 font-medium"
+            class="sm:space-y-32 w-[270px] h-[60px] rounded-full bg-teal-300 text-white border mb-4 font-medium font-dm_sans"
           >
             Purchase Now for $248</button
-          ><a href="#" class="text-teal-300 ms-20 font-semibold">Learn More</a>
+          ><a
+            href="#"
+            class="text-teal-300 ms-20 font-semibold sm:mt-20 font-poppins"
+            >Learn More</a
+          >
         </div>
       </section>
     </header>
