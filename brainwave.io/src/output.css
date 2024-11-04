@@ -642,6 +642,22 @@ video {
   z-index: -5;
 }
 
+.m-auto{
+  margin: auto;
+}
+
+.mb-16{
+  margin-bottom: 4rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
+.mb-8{
+  margin-bottom: 2rem;
+}
+
 .mr-3{
   margin-right: 0.75rem;
 }
@@ -702,6 +718,10 @@ video {
   gap: 0.75rem;
 }
 
+.gap-6{
+  gap: 1.5rem;
+}
+
 .gap-8{
   gap: 2rem;
 }
@@ -732,12 +752,18 @@ video {
   background-color: rgb(71 59 240 / var(--tw-bg-opacity));
 }
 
+.bg-pj_offwhite{
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 233 237 / var(--tw-bg-opacity));
+}
+
 .bg-red-600\/40{
   background-color: rgb(220 38 38 / 0.4);
 }
 
-.bg-transparent{
-  background-color: transparent;
+.bg-pj_white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }
 
 .bg-gradient_bg{
@@ -791,6 +817,10 @@ video {
   padding-left: 1.75rem;
 }
 
+.text-center{
+  text-align: center;
+}
+
 .font-gilroy_bold{
   font-family: Gilroy_Bold, sans-serif;
 }
@@ -817,6 +847,10 @@ video {
 
 .text-\[18px\]{
   font-size: 18px;
+}
+
+.text-\[26px\]{
+  font-size: 26px;
 }
 
 .text-\[30px\]{
@@ -850,19 +884,7 @@ video {
 
 .text-pj_white{
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.opacity-30{
-  opacity: 0.3;
-}
-
-.opacity-10{
-  opacity: 0.1;
-}
-
-.opacity-60{
-  opacity: 0.6;
+  color: rgb(245 245 245 / var(--tw-text-opacity));
 }
 
 .opacity-80{
@@ -950,6 +972,10 @@ video {
     bottom: 0%;
   }
 
+  .md\:mb-12{
+    margin-bottom: 3rem;
+  }
+
   .md\:flex{
     display: flex;
   }
@@ -962,16 +988,32 @@ video {
     height: 721px;
   }
 
+  .md\:w-\[100\%\]{
+    width: 100%;
+  }
+
   .md\:w-\[12\%\]{
     width: 12%;
+  }
+
+  .md\:w-\[25\%\]{
+    width: 25%;
   }
 
   .md\:w-\[33\%\]{
     width: 33%;
   }
 
+  .md\:w-\[50\%\]{
+    width: 50%;
+  }
+
   .md\:w-\[70\%\]{
     width: 70%;
+  }
+
+  .md\:w-\[72\%\]{
+    width: 72%;
   }
 
   .md\:w-\[75\%\]{
@@ -988,6 +1030,10 @@ video {
 
   .md\:gap-0{
     gap: 0px;
+  }
+
+  .md\:gap-16{
+    gap: 4rem;
   }
 
   .md\:bg-transparent{
@@ -1013,6 +1059,10 @@ video {
 
   .md\:text-\[28px\]{
     font-size: 28px;
+  }
+
+  .md\:text-\[36px\]{
+    font-size: 36px;
   }
 
   .md\:text-\[45px\]{
