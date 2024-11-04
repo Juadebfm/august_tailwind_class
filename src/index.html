@@ -1,13 +1,223 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline text-red-500">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="font-gilroy_regular">
+    <header>
+      <!-- NAV SECTION -->
+      <div
+        style="
+          background-image: url(../img/header_bg.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+        "
+        class="min-h-screen"
+      >
+        <nav class="md:px-8 py-[20px] flex items-center justify-between">
+          <span class="font-extrabold text-[25px]">Brainwave.io</span>
+          <ul class="flex items-center justify-between font-[600]">
+            <a href="#"> <li class="mx-[14px]">Demo</li></a>
+            <a href="#"><li class="mx-[14px]">Pages</li></a>
+            <a href="#"><li class="mx-[14px]">Support</li></a>
+            <a href="#"> <li class="mx-[14px]">Contact</li></a>
+          </ul>
+          <div class="font-[600]">
+            <button class="mx-[14px]">Log-in</button>
+            <button class="mx-[14px]">Sign-up</button>
+          </div>
+        </nav>
+
+        <!-- HERO SECTION -->
+        <div class="min-h-[80vh] px-[40px] md:px-52 py-28">
+          <h1 class="w-[40%] font-[700] text-[40px] text-4xl">
+            Find a dream job that changes life.
+          </h1>
+          <p class="w-[40%] text-[14px] mt-3 text-job_cat_bg/50">
+            With lots of unique blocks, you can easily build a page without
+            coding. Build your next job website.
+          </p>
+          <form
+            action=""
+            class="py-5 w-[64%] p-[15px] mt-5 bg-[#473BF0] rounded-md"
+          >
+            <label for="title"></label>
+            <input
+              class="h-8 rounded-md me-2 placeholder:w-[70%] placeholder:px-3 placeholder:text-[14px]"
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Job title or keyword"
+            />
+
+            <label for="title"></label>
+            <input
+              class="h-8 rounded-md placeholder:w-[70%] placeholder:px-3 placeholder:text-[14px]"
+              type="text"
+              id="title"
+              name="title"
+              placeholder="City"
+            />
+
+            <button
+              class="rounded-md text-center bg-black text-white px-7 py-1.5 mx-auto"
+            >
+              search
+            </button>
+          </form>
+          <div class="mt-4 text-job_cat_bg/50">
+            <span>Try Product Designer, Software Engineer etc.</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section
+     class="min-h-[80vh] px-[40px] md:px-32 py-24">
+      <div class="text-center mx-auto">
+        <h2 class="text-job_cat_bg text-[30px] font-bold">
+          Big companies are here
+        </h2>
+        <p class="text-job_cat_bg/50 w-[60%] mt-3 mx-auto">
+          With lots of unique blocks, you can easily build a page without
+          coding. Build your next consultancy website within few minutes. You
+          have a business to run. Stop worring about cross-browser bugs,
+          designing new pages.
+        </p>
+        <div class="mx-auto w-[500px] mt-16">
+          <img src="../img/header_Logos.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-job_cat_bg min-h-screen px-[40px] md:px-32 py-24 text-white"
+    >
+      <div
+        class="flex flex-col lg:flex-row items-start lg:items-end justify-between md:pt-16 lg:pt-0"
+      >
+        <div>
+          <h2 class="text-[36px] font-gilroy_bold">Jobs by category</h2>
+          <p
+            class="text-[19px] leading-[25px] font-gilroy_regular text-white/40 w-full md:w-[65%] mt-4"
+          >
+            With lots of unique blocks, you can easily build a page without
+            coding.
+          </p>
+        </div>
+        <a
+          href="#"
+          class="text-job_cat_explore hover:text-job_cat_explore/70 duration-200 transition-all ease-linear mt-4 lg:mt-0"
+        >
+          <span>Explore all categories</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+      <!-- Boxes -->
+      <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px] duration-200 transition-all ease-linear"
+        >
+          <div>
+            <h4>Design</h4>
+            <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
+              47 Jobs
+            </p>
+          </div>
+
+          <div
+            class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div
+          class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px] duration-200 transition-all ease-linear"
+        >
+          <div>
+            <h4>Marketing</h4>
+            <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
+              51 Jobs
+            </p>
+          </div>
+          <div
+            class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div
+          class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px] duration-200 transition-all ease-linear"
+        >
+          <div>
+            <h4>Engineering</h4>
+            <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
+              89 Jobs
+            </p>
+          </div>
+          <div
+            class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div
+          class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px] duration-200 transition-all ease-linear"
+        >
+          <div>
+            <h4>Management</h4>
+            <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
+              15 Jobs
+            </p>
+          </div>
+          <div
+            class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div
+          class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px] duration-200 transition-all ease-linear"
+        >
+          <div>
+            <h4>Finance</h4>
+            <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
+              23 Jobs
+            </p>
+          </div>
+          <div
+            class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div
+          class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px] duration-200 transition-all ease-linear"
+        >
+          <div>
+            <h4>Customer Support</h4>
+            <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
+              34 Jobs
+            </p>
+          </div>
+          <div
+            class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
