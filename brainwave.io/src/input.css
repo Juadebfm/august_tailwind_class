@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@font-face {
+  font-family: "Gilroy_Regular";
+  src: url(./gilroy/Gilroy-Regular.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Medium";
+  src: url(./gilroy/Gilroy-Medium.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Semibold";
+  src: url(./gilroy/Gilroy-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Bold";
+  src: url(./gilroy/Gilroy-Bold.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Black";
+  src: url(./gilroy/Gilroy-Black.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Light";
+  src: url(./gilroy/Gilroy-Light.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Thin";
+  src: url(./gilroy/Gilroy-Thin.ttf);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
