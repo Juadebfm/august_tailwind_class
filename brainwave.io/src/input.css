@@ -28,6 +28,25 @@
   font-family: "Gilroy_Thin";
   src: url(./gilroy/Gilroy-Thin.ttf);
 }
+.linne:hover > div:last-child {
+    display: flex;
+}
+
+.linnemedial {
+    @media (max-width: 768px) {
+        background-color: #0f0776;
+        border: 1.5px solid #531515;
+        border-radius: 9px;
+        padding: 10px;
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+.rubic {
+    color: #ffdcdcb1;
+    background-clip: text;
+}
+
 
 @tailwind base;
 @tailwind components;

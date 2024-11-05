@@ -20,46 +20,48 @@
 </head>
 <body>
     <!-- Header  -->
-    <header  style=" background-image: url(images/wave\ 1.png); background-repeat: no-repeat; background-size: contain; background-position: bottom; background-color: #68d58523;" class=" md:h-[721px] h-[auto] relative">
+    <header  style=" background-image: url(images/wave\ 1.png); background-repeat: no-repeat; background-size: contain; background-position: bottom; background-color: #68d58523;" class=" lg:h-[721px] h-[auto] relative">
         <!-- Nav  -->
-        <nav class="fixed flex items-center justify-between p-4 w-[100%] md:static bg-black/50 md:bg-transparent md:p-8">
+        <nav class="fixed flex items-center justify-between p-4 w-[100%] lg:static bg-black/50 lg:bg-transparent lg:p-8">
             <!-- Logo  -->
-            <a href="index.html" class="font-rubik font-bold text-[18px] md:text-[28px]">Brainwave</a>
+            <a href="index.html" class="font-rubik font-bold text-[18px] bg-gradient_bgru rubic lg:text-[28px]">Brainwave</a>
             <!-- Nav menu -->
-            <ul class="hidden md:flex items-center gap-3 font-gilroy_bold text-[15px] tracking-[0.1px]">
+            <ul class="hidden lg:flex items-center gap-3 font-gilroy_bold text-[15px] tracking-[0.1px]">
                 <li><a href="#">Demos</a></li>
                 <li><a href="#">Pages</a></li>
                 <li><a href="#">Support</a></li>
                 <li><a href="#">Copy</a></li>
             </ul>
             <!-- Nav button  -->
-            <div class="hidden md:flex gap-3 font-gilroy_bold text-[15px] tracking-[0.1px]">
+            <div class="hidden lg:flex gap-3 font-gilroy_bold text-[15px] tracking-[0.1px]">
                 <button type="button">Login</button>
                 <button type="button">Sign Up</button>
             </div>
             <!-- menu icon  -->
-            <div class="flex rounded-md bg-gradient_bg md:hidden hover:bg-gradient_bgh">
-                <button class= "  text-[35px] md:text-[45px] ring-1 rounded-md ring-green-600 active:text-red-700 focus:ring-2 bg-[red,blue,green] focus:ring-inset focus:ring-indigo-900 bx bx-menu"></button>
+            <div class="flex rounded-lg bg-gradient_bg lg:hidden hover:bg-gradient_bgh">
+                <button class= "  text-[35px] lg:text-[45px] ring-1 rounded-lg ring-green-600 active:text-red-700 focus:ring-2 bg-[red,blue,green] focus:ring-inset focus:ring-indigo-900 bx bx-menu"></button>
             </div>
         </nav>
-        <section class="px-8 py-16 md:px-32">
-            <div class="w-[100%] md:w-[75%] py-8">
-                <h1 class="font-gilroy_bold  text-[30px] md:text-[60px] w-[100%] md:w-[70%] leading-[42px] md:leading-[65px] text-pj_blk">Find a dream job that changes life.</h1>
-                <p class="font-gilroy_light mt-5 text-[14px] md:text-[19px] w-[100%] md:w-[70%] leading-[22px] md:leading-[32px] text-pj_blk">With lots of unique blocks, you can easily build a page without coding. Build your next job website.</p>
+        <!-- Hero Section -->
+        <section class="px-8 py-16 lg:px-32">
+            <div class="w-[100%] lg:w-[75%] py-8">
+                <h1 class="font-gilroy_bold  text-[30px] lg:text-[60px] w-[100%] lg:w-[70%] leading-[42px] lg:leading-[65px] text-pj_blk">Find a dream job that changes life.</h1>
+                <p class="font-gilroy_light mt-5 text-[14px] lg:text-[19px] w-[100%] lg:w-[70%] leading-[22px] lg:leading-[32px] text-pj_blk">With lots of unique blocks, you can easily build a page without coding. Build your next job website.</p>
                 <form class="mt-12">
-                    <div class="flex flex-col gap-8 md:gap-0 md:flex-row py-6 px-4 rounded-md bg-pj_blue w-[100%] md:w-[80%]">
-                        <input type="text" class="py-3 mr-3 rounded-md pl-7 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6" placeholder="Job title or Keyword">
-                        <input type="text" name="City" id="City" class="py-3 mr-3 rounded-md pl-7 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6" placeholder="City">
-                        <button type="button" class="py-3 rounded-md px-14 text-pj_white focus:ring-4 focus:ring-inset focus:ring-red-900 sm:text-sm/6 bg-pj_blk">Search</button>
+                    <div class="flex flex-col gap-8 lg:gap-0 lg:flex-row py-6 px-4 rounded-lg bg-pj_blue w-[100%] lg:w-[80%]">
+                        <input type="text" class="py-3 mr-3 rounded-lg pl-7 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600" placeholder="Job title or Keyword">
+                        <input type="text" name="City" id="City" class="py-3 mr-3 rounded-lg pl-7 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6" placeholder="City">
+                        <button type="button" class="py-3 rounded-lg px-14 text-pj_white focus:ring-4 focus:ring-inset focus:ring-red-900 sm:text-sm/6 bg-pj_blk">Search</button>
                     </div>
-                    <p class="font-gilroy_light mt-3 text-[12px] md:text-[15px] text-pj_blk">Try Product Designer, Software Engineer etc.</p>
+                    <p class="font-gilroy_light mt-3 text-[12px] lg:text-[15px] text-pj_blk">Try Product Designer, Software Engineer etc.</p>
                 </form>
             </div>
-            <div class="absolute bottom-[54%] md:bottom-[0%] opacity-80 md:opacity-100 right-[12%] z-[-5] w-[50%] md:w-[33%]">
+            <!-- images  -->
+            <div class="absolute bottom-[54%] lg:bottom-[0%] opacity-80 lg:opacity-100 right-[12%] z-[-5] w-[50%] lg:w-[33%]">
                 <img src="images/officeandd.png" alt="">
             </div>
-            <div class="absolute bottom-[54%] md:bottom-0 p-14 bg-red-600/40 rounded-full right-[40%] z-[-10]"></div>
-            <div class="w-[15%] md:w-[12%] commj absolute top-[36%] right-[20%] z-[-30]">
+            <div class="absolute bottom-[54%] lg:bottom-0 p-14 bg-red-600/40 rounded-full right-[40%] z-[-10]"></div>
+            <div class="w-[15%] lg:w-[12%] commj absolute top-[36%] right-[20%] z-[-30]">
                 <div class="flex justify-center "><p></p><p></p><p></p></div>
                 <div class="flex justify-center "><p></p><p></p><p></p><p></p><p></p></div>
                 <div class="flex justify-center "><p></p><p></p><p></p><p></p><p></p><p></p><p></p></div>
@@ -71,22 +73,86 @@
             </div>
         </section>
     </header>
+    <!-- Main  -->
     <main>
-        <section class="px-8 py-16 md:px-32 bg-pj_white">
-            <div class="w-[100%] md:w-[72%] m-auto text-center mb-16">
-                <h2 class="font-gilroy_bold  text-[26px] md:text-[36px] text-pj_blk mb-8">Big companies are here</h2>
-                <p class="font-gilroy_light text-[14px] md:text-[19px] text-pj_blk]">With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes. You have a business to run. Stop worring about cross-browser bugs, designing new pages.</p>
+        <!-- Section 1  -->
+        <section class="px-8 py-16 lg:px-32 bg-pj_white">
+            <div class="w-[100%] lg:w-[72%] m-auto text-center mb-16">
+                <h2 class="font-gilroy_bold  text-[26px] lg:text-[36px] text-pj_blk mb-8">Big companies are here</h2>
+                <p class="font-gilroy_light text-[14px] lg:text-[19px] text-pj_blk]">With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes. You have a business to run. Stop worring about cross-browser bugs, designing new pages.</p>
             </div>
-            <div class="w-[100%] md:w-[80%] m-auto">
-                <div class="flex items-center gap-6 mb-6 md:mb-12 md:gap-16 ">
-                    <div class="w-[100%] md:w-[50%]"><img class="w-[100%]" src="./images/pj1.png" alt="company"></div>
-                    <div class="w-[100%] md:w-[50%]"><img class="w-[100%]" src="./images/pj2.png" alt="company"></div>
-                    <div class="w-[100%] md:w-[50%]"><img class="w-[100%]" src="./images/pj3.png" alt="company"></div>
-                    <div class="w-[100%] md:w-[50%]"><img class="w-[100%]" src="./images/pj5.png" alt="company"></div>
+            <div class="w-[100%] lg:w-[80%] m-auto">
+                <div class="flex items-center gap-6 mb-6 lg:mb-12 lg:gap-16 ">
+                    <div class="w-[100%] lg:w-[50%]"><img class="w-[100%]" src="./images/pj1.png" alt="company"></div>
+                    <div class="w-[100%] lg:w-[50%]"><img class="w-[100%]" src="./images/pj2.png" alt="company"></div>
+                    <div class="w-[100%] lg:w-[50%]"><img class="w-[100%]" src="./images/pj3.png" alt="company"></div>
+                    <div class="w-[100%] lg:w-[50%]"><img class="w-[100%]" src="./images/pj5.png" alt="company"></div>
                 </div>
-                <div class="flex justify-center gap-6 md:gap-16">
-                    <div class=" w-[50%] md:w-[25%]"><img class="w-[50%] m-auto md:w-[100%]" src="./images/pj7.png" alt="company"></div>
-                    <div class=" w-[50%] md:w-[25%]"><img class="w-[50%] m-auto md:w-[100%]" src="./images/pj8.png" alt="company"></div>
+                <div class="flex justify-center gap-6 lg:gap-16">
+                    <div class=" w-[50%] lg:w-[25%]"><img class="w-[50%] m-auto lg:w-[100%]" src="./images/pj7.png" alt="company"></div>
+                    <div class=" w-[50%] lg:w-[25%]"><img class="w-[50%] m-auto lg:w-[100%]" src="./images/pj8.png" alt="company"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 2 -->
+        <section class="px-8 py-16 lg:px-32 bg-pj_blk">
+            <!-- explore  -->
+            <div class="flex flex-col items-center mb-16 lg:justify-between lg:flex-row">
+                <div class="text-white w-[100%] lg:w-[40%]">
+                    <h2 class="text-[26px] lg:text-[36px] font-gilroy_bold mb-4 lg:mb-8">Jobs by category</h2>
+                    <p class="text-[14px] lg:text-[19px] font-gilroy_light opacity-[65%]">With lots of unique blocks, you can easily build a page without coding.</p>
+                </div>
+                <div class="w-[100%] lg:w-auto justify-center"><button class="linnemedial hover:text-red-500 text-[12px] md:text-[17px] flex items-center font-gilroy_bold text-pj_green"><span>Explore all categories</span> <i class="h-[14px] bx bx-right-arrow-alt"></i></button></div>
+            </div>
+            <!-- container  -->
+            <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+                <!-- Design  -->
+                <div class="flex justify-between p-2 bg-white rounded-md cursor-pointer md:p-6 text-pj_blk hover:bg-pj_blue hover:text-white linne">
+                    <div>
+                        <h3 class="font-gilroy_bold text-[21px] mb-3">Design</h3>
+                        <p class="font-gilroy_light text-[15px] opacity-[65%]">47 Jobs</p>
+                    </div>
+                    <div class="hidden p-3"><i class="p-3 text-[20px] text-black opacity-20 rounded-full bx bx-right-arrow-alt bg-white"></i></div>
+                </div>
+                <!-- Marketing  -->
+                <div class="flex justify-between p-2 bg-white rounded-md cursor-pointer md:p-6 text-pj_blk hover:bg-pj_blue hover:text-white linne">
+                    <div>
+                        <h3 class="font-gilroy_bold text-[21px] mb-3">Marketing</h3>
+                        <p class="font-gilroy_light text-[15px] opacity-[65%]">51 Jobs</p>
+                    </div>
+                    <div class="hidden p-3"><i class="p-3 text-[20px] text-black  opacity-20 rounded-full bx bx-right-arrow-alt bg-white"></i></div>
+                </div>
+                <!-- Engineering  -->
+                <div class="flex justify-between p-2 bg-white rounded-md cursor-pointer md:p-6 text-pj_blk hover:bg-pj_blue hover:text-white linne">
+                    <div>
+                        <h3 class="font-gilroy_bold text-[21px] mb-3">Engineering</h3>
+                        <p class="font-gilroy_light text-[15px] opacity-[65%]">81 Jobs</p>
+                    </div>
+                    <div class="hidden p-3"><i class="p-3 text-[20px] text-black opacity-20 rounded-full bx bx-right-arrow-alt bg-white"></i></div>
+                </div>
+                <!-- Mangement  -->
+                <div class="flex justify-between p-2 bg-white rounded-md cursor-pointer md:p-6 text-pj_blk hover:bg-pj_blue hover:text-white linne">
+                    <div>
+                        <h3 class="font-gilroy_bold text-[21px] mb-3">Mangement</h3>
+                        <p class="font-gilroy_light text-[15px] opacity-[65%]">16 Jobs</p>
+                    </div>
+                    <div class="hidden p-3"><i class="p-3 text-[20px] text-black  opacity-20 rounded-full bx bx-right-arrow-alt bg-white"></i></div>
+                </div>
+                <!-- Finance  -->
+                <div class="flex justify-between p-2 bg-white rounded-md cursor-pointer md:p-6 text-pj_blk hover:bg-pj_blue hover:text-white linne">
+                    <div>
+                        <h3 class="font-gilroy_bold text-[21px] mb-3">Finance</h3>
+                        <p class="font-gilroy_light text-[15px] opacity-[65%]">23 Jobs</p>
+                    </div>
+                    <div class="hidden p-3"><i class="p-3 text-[20px] text-black opacity-20 rounded-full bx bx-right-arrow-alt bg-white"></i></div>
+                </div>
+                <!-- Customer Support  -->
+                <div class="flex justify-between p-2 bg-white rounded-md cursor-pointer md:p-6 text-pj_blk hover:bg-pj_blue hover:text-white linne">
+                    <div>
+                        <h3 class="font-gilroy_bold text-[21px] mb-3">Customer Support</h3>
+                        <p class="font-gilroy_light text-[15px] opacity-[65%]">34 Jobs</p>
+                    </div>
+                    <div class="hidden p-3"><i class="p-3 text-[20px] text-black opacity-20 rounded-full bx bx-right-arrow-alt bg-white"></i></div>
                 </div>
             </div>
         </section>
