@@ -45,17 +45,24 @@
             With lots of unique blocks, you can easily build a page without
             coding. Build your next job website.
           </p>
-          <div>
-            <form action="">
-                <input type="text">
-                <input type="text">
-                <button>Search</button>
+          <div class="bg-[#473BF0] w-[680px] h-[95px] flex items-center px-[20px] rounded-lg mt-16 shadow-2xl">
+            <form class="flex gap-4" action="">
+                <input class="w-[230px] h-[50px] rounded-lg text-[12px] px-[15px]" type="text" placeholder="Job title or Keyword">
+                <select class="w-[230px] h-[50px] rounded-lg text-[12px] px-[15px]" name= "city" id= "city">
+                    <option value="City">City</option>
+                    <option value="Lagos">Lagos</option>
+                    <option value="Abuja">Abuja</option>
+                    <option value="Port-Harcourt">Port-Harcourt</option>
+                    <option value="Ilorin">Ilroin</option>
+                  </select>
+                <button class="rounded-lg bg-[#161C2D] w-[140px] h-[51px] text-white font-semibold">Search</button>
             </form>
           </div>
+          <h6 class="text-[#161C2D]/40 mt-8 text-[15px]">Try Product Designer, Software Engineer etc.</h>
         </div>
       </div>
       <img
-        class="absolute top-[125px] right-[120px]"
+        class="absolute top-[125px] right-[120px] z-[-1]"
         src="./asset/images/office.png"
         alt=""
       />
