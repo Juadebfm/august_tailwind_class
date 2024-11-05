@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 @font-face {
   font-family: "Gilroy_Regular";
 
@@ -593,20 +592,233 @@ video {
   display: none;
 }
 
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.size-7{
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.w-\[\]{
+  width: ;
+}
+
+.w-\[481px\]{
+  width: 481px;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.space-x-5 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-3 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-8 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2rem * var(--tw-space-x-reverse));
+  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-10 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-red-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
+}
+
+.bg-header_bg_color{
+  background-color: #68D5851A;
+}
+
+.bg-js_blue{
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 59 240 / var(--tw-bg-opacity));
+}
+
+.bg-js_deep_blue{
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 28 45 / var(--tw-bg-opacity));
+}
+
+.p-2{
+  padding: 0.5rem;
+}
+
+.p-3{
+  padding: 0.75rem;
+}
+
+.p-3\.5{
+  padding: 0.875rem;
+}
+
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-\[\]{
+  padding-left: ;
+  padding-right: ;
+}
+
+.px-\[2rem\]{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-36{
+  padding-left: 9rem;
+  padding-right: 9rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-20{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-96{
+  padding-left: 24rem;
+  padding-right: 24rem;
+}
+
+.px-48{
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
+}
+
+.align-middle{
+  vertical-align: middle;
+}
+
+.font-gilroy_bold{
+  font-family: Gilroy_Bold, sans-serif;
+}
+
+.font-gilroy_regular{
+  font-family: Gilroy_Regular, sans-serif;
+}
+
+.font-gilroy_light{
+  font-family: Gilroy_Light, sans-serif;
+}
+
+.font-gilroy_semibold{
+  font-family: Gilroy_Semibold, sans-serif;
+}
+
+.font-gilroy_medium{
+  font-family: Gilroy_Medium, sans-serif;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-\[28px\]{
+  font-size: 28px;
+}
+
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold{
   font-weight: 700;
 }
 
-.text-red-500{
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
+.font-semibold{
+  font-weight: 600;
 }
 
-.underline{
-  text-decoration-line: underline;
+.font-medium{
+  font-weight: 500;
+}
+
+.text-\[2xl\]{
+  color: 2xl;
+}
+
+.text-\[\]{
+  color: ;
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
