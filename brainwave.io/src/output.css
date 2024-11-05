@@ -7,12 +7,6 @@
 }
 
 @font-face {
-  font-family: "Gilroy_BoldItalic";
-
-  src: url(./gilroy/Gilroy-BoldItalic.ttf);
-}
-
-@font-face {
   font-family: "Gilroy_Medium";
 
   src: url(./gilroy/Gilroy-Medium.ttf);
@@ -71,7 +65,7 @@
   transition: box-shadow 0.2s ease-in-out;
   padding: 10px;
   border-radius: 9px;
-  background-color: #faebd766;
+  background-color: #faebd7;
 }
 
 .rubic {
@@ -788,6 +782,14 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-4{
+  margin-top: 1rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
+}
+
 .flex{
   display: flex;
 }
@@ -842,6 +844,10 @@ video {
 
 .w-\[80\%\]{
   width: 80%;
+}
+
+.w-\[505\]{
+  width: 505;
 }
 
 .cursor-pointer{
@@ -908,6 +914,11 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-t-xl{
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
 .border-\[1px\]{
   border-width: 1px;
 }
@@ -966,7 +977,7 @@ video {
 
 .bg-pj_whited{
   --tw-bg-opacity: 1;
-  background-color: rgb(244 247 250 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-red-600\/40{
@@ -976,6 +987,11 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-pj_whitedark{
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 247 250 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-\[9\.86\%\]{
@@ -1008,6 +1024,10 @@ video {
 
 .p-6{
   padding: 1.5rem;
+}
+
+.p-8{
+  padding: 2rem;
 }
 
 .px-14{
@@ -1088,10 +1108,6 @@ video {
 
 .font-rubik{
   font-family: Rubik, sans-serif;
-}
-
-.font-gilroy_BoldItalic{
-  font-family: Gilroy_BoldItalic, sans-serif;
 }
 
 .text-\[12px\]{
@@ -1508,6 +1524,10 @@ video {
 
   .lg\:text-\[60px\]{
     font-size: 60px;
+  }
+
+  .lg\:text-\[21px\]{
+    font-size: 21px;
   }
 
   .lg\:leading-\[32px\]{
