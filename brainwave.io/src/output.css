@@ -7,6 +7,12 @@
 }
 
 @font-face {
+  font-family: "Gilroy_BoldItalic";
+
+  src: url(./gilroy/Gilroy-BoldItalic.ttf);
+}
+
+@font-face {
   font-family: "Gilroy_Medium";
 
   src: url(./gilroy/Gilroy-Medium.ttf);
@@ -728,6 +734,11 @@ video {
   margin: auto;
 }
 
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -765,6 +776,10 @@ video {
   margin-top: 3rem;
 }
 
+.mt-2{
+  margin-top: 0.5rem;
+}
+
 .mt-3{
   margin-top: 0.75rem;
 }
@@ -789,6 +804,14 @@ video {
   height: 14px;
 }
 
+.h-\[250px\]{
+  height: 250px;
+}
+
+.h-\[35px\]{
+  height: 35px;
+}
+
 .h-\[auto\]{
   height: auto;
 }
@@ -801,8 +824,24 @@ video {
   width: 15%;
 }
 
+.w-\[240\.167px\]{
+  width: 240.167px;
+}
+
+.w-\[35\.2188px\]{
+  width: 35.2188px;
+}
+
 .w-\[50\%\]{
   width: 50%;
+}
+
+.w-\[60\%\]{
+  width: 60%;
+}
+
+.w-\[80\%\]{
+  width: 80%;
 }
 
 .cursor-pointer{
@@ -869,6 +908,19 @@ video {
   border-radius: 0.75rem;
 }
 
+.border-\[1px\]{
+  border-width: 1px;
+}
+
+.border-b-2{
+  border-bottom-width: 2px;
+}
+
+.border-pj_offwhite{
+  --tw-border-opacity: 1;
+  border-color: rgb(231 233 237 / var(--tw-border-opacity));
+}
+
 .bg-\[red\2c blue\2c green\]{
   background-color: red,blue,green;
 }
@@ -890,6 +942,21 @@ video {
 .bg-pj_green{
   --tw-bg-opacity: 1;
   background-color: rgb(104 213 133 / var(--tw-bg-opacity));
+}
+
+.bg-pj_lblue{
+  --tw-bg-opacity: 1;
+  background-color: rgb(52 179 242 / var(--tw-bg-opacity));
+}
+
+.bg-pj_offwhite{
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 233 237 / var(--tw-bg-opacity));
+}
+
+.bg-pj_red{
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 75 75 / var(--tw-bg-opacity));
 }
 
 .bg-pj_white{
@@ -939,6 +1006,10 @@ video {
   padding: 1rem;
 }
 
+.p-6{
+  padding: 1.5rem;
+}
+
 .px-14{
   padding-left: 3.5rem;
   padding-right: 3.5rem;
@@ -984,6 +1055,11 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.py-32{
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -1014,8 +1090,16 @@ video {
   font-family: Rubik, sans-serif;
 }
 
+.font-gilroy_BoldItalic{
+  font-family: Gilroy_BoldItalic, sans-serif;
+}
+
 .text-\[12px\]{
   font-size: 12px;
+}
+
+.text-\[13px\]{
+  font-size: 13px;
 }
 
 .text-\[14px\]{
@@ -1030,6 +1114,10 @@ video {
   font-size: 18px;
 }
 
+.text-\[19px\]{
+  font-size: 19px;
+}
+
 .text-\[20px\]{
   font-size: 20px;
 }
@@ -1042,6 +1130,10 @@ video {
   font-size: 26px;
 }
 
+.text-\[28px\]{
+  font-size: 28px;
+}
+
 .text-\[30px\]{
   font-size: 30px;
 }
@@ -1052,6 +1144,10 @@ video {
 
 .font-bold{
   font-weight: 700;
+}
+
+.uppercase{
+  text-transform: uppercase;
 }
 
 .leading-7{
@@ -1070,6 +1166,10 @@ video {
   letter-spacing: 0.1px;
 }
 
+.tracking-\[1\.65px\]{
+  letter-spacing: 1.65px;
+}
+
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1078,6 +1178,11 @@ video {
 .text-pj_blk{
   --tw-text-opacity: 1;
   color: rgb(22 28 45 / var(--tw-text-opacity));
+}
+
+.text-pj_blue{
+  --tw-text-opacity: 1;
+  color: rgb(71 59 240 / var(--tw-text-opacity));
 }
 
 .text-pj_green{
@@ -1196,6 +1301,10 @@ video {
     bottom: 0%;
   }
 
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:p-6{
     padding: 1.5rem;
   }
@@ -1238,6 +1347,14 @@ video {
     display: none;
   }
 
+  .lg\:h-\[279px\]{
+    height: 279px;
+  }
+
+  .lg\:h-\[56px\]{
+    height: 56px;
+  }
+
   .lg\:h-\[721px\]{
     height: 721px;
   }
@@ -1270,6 +1387,10 @@ video {
     width: 50%;
   }
 
+  .lg\:w-\[57\.2188px\]{
+    width: 57.2188px;
+  }
+
   .lg\:w-\[60\%\]{
     width: 60%;
   }
@@ -1296,6 +1417,10 @@ video {
 
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-\[60\%\2c 40\%\]{
@@ -1361,12 +1486,20 @@ video {
     font-size: 19px;
   }
 
+  .lg\:text-\[25px\]{
+    font-size: 25px;
+  }
+
   .lg\:text-\[28px\]{
     font-size: 28px;
   }
 
   .lg\:text-\[36px\]{
     font-size: 36px;
+  }
+
+  .lg\:text-\[38px\]{
+    font-size: 38px;
   }
 
   .lg\:text-\[45px\]{
