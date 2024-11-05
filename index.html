@@ -14,20 +14,51 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="font-[Poppins]">
-    <header class="bg-[#68D5851A] h-[761px]">
-      <nav class="flex items-center justify-between px-16 pt-8">
-        <span class="font-medium text-2xl text-[#161C2D]">Brainwave.io</span>
-        <ul class="flex items-center justify-between gap-6 text-sm font-medium text-[#161C2D] cursor-pointer">
+    <header class="bg-[#68D5851A] h-[761px] relative w-[100%]">
+      <nav class="flex items-center justify-between px-8 pt-8">
+        <span class="font-semibold text-2xl text-[#161C2D]">Brainwave.io</span>
+        <ul
+          class="flex items-center justify-between gap-6 text-sm font-medium text-[#161C2D] cursor-pointer"
+        >
           <li><a href="">Demo</a></li>
           <li><a href="">Pages</a></li>
           <li><a href="">Support</a></li>
           <li><a href="">Contact</a></li>
         </ul>
         <div class="flex gap-6">
-          <button class="text-sm text-[#161C2D] font-medium cursor-pointer">Log In</button>
-          <button class="text-sm text-[#161C2D] font-medium cursor-pointer">Sign Up</button>
+          <button class="text-sm text-[#161C2D] font-medium cursor-pointer">
+            Log In
+          </button>
+          <button class="text-sm text-[#161C2D] font-medium cursor-pointer">
+            Sign Up
+          </button>
         </div>
       </nav>
+      <div class="mt-32 ">
+        <div class="mx-[180px]">
+          <h1
+            class="text-[#161C2D] font-bold text-[45px] w-[45%] leading-[3.5rem] mb-[1rem] my-[200px]"
+          >
+            Find a dream job that changes life.
+          </h1>
+          <p class="text-[#161C2D]/50 text-[16px] w-[45%]">
+            With lots of unique blocks, you can easily build a page without
+            coding. Build your next job website.
+          </p>
+          <div>
+            <form action="">
+                <input type="text">
+                <input type="text">
+                <button>Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <img
+        class="absolute top-[125px] right-[120px]"
+        src="./asset/images/office.png"
+        alt=""
+      />
     </header>
   </body>
 </html>
