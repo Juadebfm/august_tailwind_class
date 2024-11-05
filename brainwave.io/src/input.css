@@ -35,12 +35,19 @@
 .linnemedial {
     @media (max-width: 768px) {
         background-color: #0f0776;
-        border: 1.5px solid #531515;
         border-radius: 9px;
         padding: 10px;
         width: 100%;
         margin-top: 1rem;
     }
+}
+
+.linnemedial:focus {
+    box-shadow: 0 0 0 2px #fa0776;
+    transition: box-shadow 0.2s ease-in-out;
+    padding: 10px;
+    border-radius: 9px;
+    background-color: #faebd766;
 }
 .rubic {
     color: #ffdcdcb1;
