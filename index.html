@@ -11,9 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="font-[Poppins]">
+
+    <!-- Header and Hero Section -->
     <header class="bg-[#68D5851A] h-[761px] relative w-[100%]">
       <nav class="flex items-center justify-between px-8 pt-8">
         <span class="font-semibold text-2xl text-[#161C2D]">Brainwave.io</span>
@@ -69,13 +72,126 @@
       <img class="absolute bottom-[380px] left-[1000px] z-[-3]" src="./asset/images/Fill 1.png" alt="pattern">
       <img class="absolute left-[630px] bottom-[0px] z-[-3]" src="./asset/images/Oval.png" alt="">
     </header>
+
+    <!-- End of Header and Hero Section -->
+
+    <!-- Brand Section -->
     <section class="mt-24">
-        <div class="flex flex-col items-center justify-center gap-6">
+        <div class="flex flex-col items-center justify-center gap-6 mb-[6rem]">
         <h2 class="font-bold text-[28px] text-[#161C2D]">Big companies are here</h2>
         <p class="text-[#161C2D]/40 text-center w-[50%] mb-[45px]">With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes. You have a business to run. Stop worring about cross-browser bugs, designing new pages.</p>
         <img class="w-[50%]" src="./asset/images/Logos.png" alt="logos">
         </div>
         
+    </section>
+
+    <!-- End of Brand Section -->
+
+
+    <!-- Card Section -->
+
+    <section
+      class="bg-[#161C2D] min-h-screen px-[40px] md:px-32 py-24 text-white">
+      <div class="flex flex-col lg:flex-row items-start lg:items-end justify-between md:pt-16 lg:pt-0">
+        <div>
+          <h2 class="text-[36px] font-[poppins]">Jobs by category</h2>
+          <p class="text-[19px] leading-[25px] text-[poppins] text-white/40 w-full md:w-[65%] mt-4">
+            With lots of unique blocks, you can easily build a page without coding.</p>
+        </div>
+        <a href="#" class="text-[#68D585] hover:text-[#68D585]/70 duration-200 transition-all ease-linear mt-4 lg:mt-0">
+          <span>Explore all categories</span>
+          <i class="bx bx-right-arrow-alt"></i>
+        </a>
+      </div>
+      <!-- Boxes -->
+      <div class="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="group bg-[#FFFFFF] hover:bg-[#473BF0] text-[#161C2D] hover:text-[#FFFFFF] p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]">
+          <div>
+            <h4>Design</h4>
+            <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white"> 47 Jobs </p>
+          </div>
+          <div
+            class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+          >
+            <i class="bx bx-right-arrow-alt"></i>
+          </div>
+        </div>
+        <div
+        class="group bg-[#FFFFFF] hover:bg-[#473BF0] text-[#161C2D] hover:text-[#FFFFFF] p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]"
+        >
+          <div>
+            <h4>Marketing</h4>
+            <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
+              51 Jobs
+            </p>
+          </div>
+          <div
+            class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+          >
+            <i class="bx bx-right-arrow-alt"></i>
+          </div>
+        </div>
+        <div
+        class="group bg-[#FFFFFF] hover:bg-[#473BF0] text-[#161C2D] hover:text-[#FFFFFF] p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]"
+        >
+          <div>
+            <h4>Engineering</h4>
+            <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
+              89 Jobs
+            </p>
+          </div>
+          <div
+            class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+          >
+            <i class="bx bx-right-arrow-alt"></i>
+          </div>
+        </div>
+        <div
+        class="group bg-[#FFFFFF] hover:bg-[#473BF0] text-[#161C2D] hover:text-[#FFFFFF] p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]"
+        >
+          <div>
+            <h4>Management</h4>
+            <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
+              16 Jobs
+            </p>
+          </div>
+          <div
+            class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+          >
+            <i class="bx bx-right-arrow-alt"></i>
+          </div>
+        </div>
+        <div
+        class="group bg-[#FFFFFF] hover:bg-[#473BF0] text-[#161C2D] hover:text-[#FFFFFF] p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]"
+        >
+          <div>
+            <h4>Finance</h4>
+            <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
+              23 Jobs
+            </p>
+          </div>
+          <div
+            class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+          >
+            <i class="bx bx-right-arrow-alt"></i>
+          </div>
+        </div>
+        <div
+        class="group bg-[#FFFFFF] hover:bg-[#473BF0] text-[#161C2D] hover:text-[#FFFFFF] p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]"
+        >
+          <div>
+            <h4>Customer Suppor</h4>
+            <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
+              34 Jobs
+            </p>
+          </div>
+          <div
+            class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+          >
+            <i class="bx bx-right-arrow-alt"></i>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
