@@ -3,68 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Boxicon -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <style>
+      .overlay {
+        background: url(/images/overlay.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        position: relative;
+        z-index: 0;
+      }
+    </style>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body
-    class="px-[35px] md:px-[4rem] py-[2rem] font-dm_sans overflow-x-hidden h-screen"
-  >
-    <header>
-      <!-- Nav Section -->
-      <nav class=" font-dm_sans flex items-center justify-between gap-8">
-        <span
-          class="text-[18px] md:text-[24px] lg:text-[32px] font-poppins font-semibold text-nav_blue"
-          >Startup 3</span
+  <body class="overflow-x-hidden h-screen">
+    <!-- header section -->
+    <header class="overlay bg-green-100 pt-4 px-6">
+      <nav
+        class="flex items-center justify-between gap-8 px-[35px] md:px-[2rem] py-[1rem]"
+      >
+        <span class="font-gilroy_bold text-[24px] md:text-[28px]"
+          >Brainwave.io</span
         >
         <ul
-          class="flex items-center justify-between flex-wrap gap-8 text-gray-400"
+          class="flex items-center justify-between gap-8 font-gilroy_bold text-[15px]"
         >
-          <li class="hidden lg:block"><a href="#"></a>Home</li>
-          <li class="hidden lg:block"><a href="#"></a>Features</li>
-          <li class="hidden lg:block"><a href="#"></a>Blog</li>
-          <li class="hidden lg:block"><a href="#"></a>Shop</li>
-          <li class="hidden lg:block">
-            <a href="#"><i class="bx bx-search"></i></a>
-          </li>
+          <li class="hidden lg:block"><a href="#">Demos</a></li>
+          <li class="hidden lg:block"><a href="#">Pages</a></li>
+          <li class="hidden lg:block"><a href="#">Support</a></li>
+          <li class="hidden lg:block"><a href="#">Contact</a></li>
         </ul>
-        <div class="flex items-center justify-between gap-8">
-          <button class="text-gray-400 hidden lg:block">Sign In</button>
-          <button
-            class="w-[100px] h-[40px] rounded-full bg-teal-400 text-white hidden lg:block"
-          >
-            Sign Up
-          </button>
+        <div
+          class="flex items-end justify-between font-gilroy_bold text-[15px]"
+        >
+          <button class="hidden lg:block w-[100px] h-[40px]">Login In</button>
+          <button class="w-[100px] h-[40px] hidden lg:block">Sign Up</button>
         </div>
-        <div>
-          <i class="bx bx-menu lg:hidden"></i>
+        <div class="flex lg:hidden">
+          <i class="bx bx-menu text-[35px]"></i>
         </div>
       </nav>
-      <!-- Hero Section -->
-      <section
-        class=" mt-8 md:mt-[2rem] flex flex-col items-center justify-center"
-      >
-        <h1
-          class="text-[32px] md:text-[48px] lg:text-[56px] font-semibold w-full text-center mb-4 text-nav_blue"
-        >
-          Startup Framework
-        </h1>
-        <p
-          class="font-dm_sans text-[24px] w-full md:w-[80%] lg:w-[50%] text-center text-gray-400 mb-[2rem]"
-        >
-          We made it so beutiful and simple. It combines landings, pages, blogs
-          and shop screens. It is definitely the tool you need in your
-          collection!
-        </p>
-        <div class="flex flex-col gap-8">
-          <button
-            class="w-full px-6 py-2 rounded-full bg-teal-400 text-white mt-4"
+      <!-- Hero section -->
+      <section class="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-8">
+        <div class="flex flex-col items-center justify-center w-full md:w-[100%]">
+          <h1
+            class="font-gilroy_bold text-[36px] text-center md:text-[60px] w-full md:w-[70%] lg:w-[90%] mt-8"
           >
-            Purchase Now for $248
-          </button>
-          <button class="font-dm_sans text-teal-400">Learn More</button>
+            Find a dream job that changes life.
+          </h1>
+          <p
+            class="font-gilroy_regular text-job_cat_bg/60 text-[16px] md:text-[19px] sm:w-[40%] md:w-[70%] text-center leading-10 lg:w-[90%] mt-8"
+          >
+            With lots of unique blocks, you can easily build a page without
+            coding. Build your next job website.
+          </p>
+          <div
+            class="flex items-center justify-center w-full h-auto lg:ps-36 relative top-2 z-10 sm:h-[80%] md:w-[90%]"
+          >
+            <form
+              class="flex flex-col sm:flex-row h-auto items-center gap-4 mt-8 bg-bg_form_col p-6 rounded font-gilroy_regular"
+            >
+              <div>
+                <input
+                  type="text"
+                  placeholder="Job title or keyword"
+                  class="p-1 placeholder:text-job_cat_bg/60 sm:ps px-4 rounded"
+                />
+              </div>
+              <div class="relative">
+                <input
+                  type="text"
+                  placeholder="City"
+                  class="p-1 rounded placeholder:text-job_cat_bg px-4"
+                />
+                <div class="absolute top-1 right-3">
+                  <span
+                    ><i class="bx bx-chevron-down text-job_cat_bg"></i
+                  ></span>
+                </div>
+              </div>
+              <div>
+                <button
+                  class="p-1 rounded bg-job_cat_bg px-8 text-job_cat_box_offwhite"
+                >
+                  Search
+                </button>
+              </div>
+            </form>
+          </div>
+          <small
+            class="font-gilroy_regular lg:text-[15px] mt-8 mb-10 text-start w-full ps-16 text-job_cat_bg/60"
+            >Try Product Designer, Software Engineer etc.</small
+          >
+        </div>
+        <div class=" flex items-center justify-center w-[80%] h-auto relative sm:items-center ">
+          <div class=" w-full max-w-[90%] h-auto">
+            <img src="/images/header_lady.png" alt="header lady"/>
+          </div>
+          <div class="w-20 absolute md:right-20 lg:right-32 md:top-24 lg:top-36 -z-10">
+            <img src="/images/header_pattern.png" alt="header pattern" class="hidden lg:block" />
+          </div>
+          <div class="w-20 absolute bottom-0 -left-6 -z-10">
+            <img src="/images/Oval.png" alt="oval" class="" />
+          </div>
         </div>
       </section>
     </header>

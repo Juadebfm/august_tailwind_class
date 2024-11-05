@@ -3,17 +3,22 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      fontFamily: {
-        dm_sans: ["DM Sans", "sans-serif"],
-        poppins: ["Poppins", "sans-serif"],
-      },
       colors: {
-        p_bg: "#2F1893",
-        p_nav_btn: "#482BE7",
-        p_hero_btn: "#25DAC5",
-        nav_blue: "#1E0E62"
+        job_cat_bg: "#161C2D",
+        job_cat_box_blue: "#473BF0",
+        job_cat_box_offwhite: "#E7E9ED",
+        job_cat_explore: "#68D585",
+        hrd_bg_col: "#68D5851A",
+        bg_form_col: "#473BF0",
       },
-      fontSize: "24px",
+      fontFamily: {
+        gilroy_regular: ["Gilroy_Regular", "sans-serif"],
+        gilroy_medium: ["Gilroy_Medium", "sans-serif"],
+        gilroy_semibold: ["Gilroy_Semibold", "sans-serif"],
+        gilroy_bold: ["Gilroy_Bold", "sans-serif"],
+        gilroy_black: ["Gilroy_Black", "sans-serif"],
+        gilroy_light: ["Gilroy_Light", "sans-serif"],
+      },
     },
   },
   plugins: [],
