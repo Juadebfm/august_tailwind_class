@@ -70,7 +70,7 @@ nav .rubic {
 }
 .linneul a {
     font-size: 17px;
-    color: #ffcd33;
+    color: #7D818D;
     font-family: "Gilroy_Regular";
 
     @media (max-width : 773px) {
@@ -79,7 +79,7 @@ nav .rubic {
 }
 
 .linneul a:hover {
-    color: #ff9d00;
+    color: #68D585;
     text-shadow: 0 0 10px rgb(17, 255, 239);
 }
 .linneul a:active {
@@ -94,24 +94,6 @@ nav .rubic {
     margin-bottom: 1rem;
     
 }
-.linnemenu a {
-  font-size: 35px;
-  color: #7D818D;
-
-  @media (max-width : 773px) {
-      font-size: 25px;
-  }
-}
-
-.linnemenu a:hover {
-  color: #68D585;
-  text-shadow: 0 0 10px rgb(17, 255, 239);
-}
-.linnemenu a:active {
-  color: #a10997;
-  
-}
-
 
 @tailwind base;
 @tailwind components;
