@@ -53,6 +53,64 @@
     color: #ffdcdcb1;
     background-clip: text;
 }
+nav .rubic {
+     @media (min-width: 768px) {
+        background: none;
+        color: #161c2d;
+    }
+}
+.linneul span {
+    font-size: 15px;
+    font-family: "Gilroy_Bold";
+    text-transform: uppercase;
+    color: #eef;
+    @media (max-width : 773px) {
+        font-size: 10px;
+    }
+}
+.linneul a {
+    font-size: 17px;
+    color: #ffcd33;
+    font-family: "Gilroy_Regular";
+
+    @media (max-width : 773px) {
+        font-size: 12px;
+    }
+}
+
+.linneul a:hover {
+    color: #ff9d00;
+    text-shadow: 0 0 10px rgb(17, 255, 239);
+}
+.linneul a:active {
+    color: #ff0000;
+    
+}
+ 
+.linneul ul {
+    margin-top: 2rem;
+}
+.linneul li{
+    margin-bottom: 1rem;
+    
+}
+.linnemenu a {
+  font-size: 35px;
+  color: #7D818D;
+
+  @media (max-width : 773px) {
+      font-size: 25px;
+  }
+}
+
+.linnemenu a:hover {
+  color: #68D585;
+  text-shadow: 0 0 10px rgb(17, 255, 239);
+}
+.linnemenu a:active {
+  color: #a10997;
+  
+}
 
 
 @tailwind base;

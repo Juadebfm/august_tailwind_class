@@ -8,15 +8,6 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Output css  -->
     <link rel="stylesheet" href="./output.css">
-    <style> 
-        .commj p {
-            padding: 2%;
-            background-color: #00000088;
-            border-radius: 999px;
-            margin: 3%;
-
-        }
-    </style>
 </head>
 <body class="overflow-x-hidden">
     <!-- Header  -->
@@ -24,7 +15,7 @@
         <!-- Nav  -->
         <nav class="fixed z-10 flex items-center justify-between p-4 w-[100%] lg:static bg-black/50 hover:bg-black lg:hover:bg-black/0 lg:bg-transparent lg:p-8">
             <!-- Logo  -->
-            <a href="index.html" class="font-rubik font-bold text-[18px] bg-gradient_bgru rubic lg:text-[28px]">Brainwave</a>
+            <a href="index.html" class="font-rubik font-bold text-[18px] lg:bg-none bg-gradient_bgru rubic lg:text-[28px]">Brainwave</a>
             <!-- Nav menu -->
             <ul class="hidden lg:flex items-center gap-3 font-gilroy_bold text-[15px] tracking-[0.1px]">
                 <li><a href="#">Demos</a></li>
@@ -61,15 +52,8 @@
                 <img src="images/officeandd.png" alt="Alart">
             </div>
             <div class="absolute bottom-[54%] lg:bottom-0 p-14 bg-red-600/40 rounded-full right-[40%] z-[-10]"></div>
-            <div class="w-[15%] lg:w-[12%] commj absolute top-[36%] right-[20%] z-[-30]">
-                <div class="flex justify-center "><p></p><p></p><p></p></div>
-                <div class="flex justify-center "><p></p><p></p><p></p><p></p><p></p></div>
-                <div class="flex justify-center "><p></p><p></p><p></p><p></p><p></p><p></p><p></p></div>
-                <div class="flex justify-center "><p></p><p></p><p></p><p></p><p></p><p></p><p></p></div>
-                <div class="flex justify-center "><p></p><p></p><p></p><p></p><p></p><p></p><p></p></div>
-                <div class="flex justify-center "><p></p><p></p><p></p><p></p><p></p><p></p><p></p></div>
-                <div class="flex justify-center "><p></p><p></p><p></p><p></p><p></p></div>
-                <div class="flex justify-center "><p></p><p></p><p></p></div>
+            <div class=" absolute top-[36%] right-[20%] z-[-30] w-[10%]">
+               <div><img src="images/name.png" alt="fill"></div>
             </div>
         </section>
     </header>
@@ -206,18 +190,18 @@
         </section>
         <!-- Main Section 4 -->
         <section class="px-8 py-16 lg:px-32 bg-pj_whited">
-            <div class="flex items-center justify-between">
-                <div class="w-[80%] lg:w-[50%]">
+            <div class="flex flex-col items-center justify-between lg:flex-row">
+                <div class="w-[100%] lg:w-[50%]">
                     <h2 class="lg:text-[38px] text-[28px] font-gilroy_bold text-pj_blk mb-4">Featured jobs</h2>
                     <p class="lg:text-[19px] text-[14px] font-gilroy_light text-pj_blk">With lots of unique blocks, you can easily build a page without coding.</p>
                 </div>
-                <div class="text-[18px] lg:text-[25px] text-pj_blk bg-pj_offwhite">
-                    <i class='bx bx-left-arrow-alt'></i>
-                    <i class='bx bx-right-arrow-alt'></i>
+                <div class="flex py-16 justify-between w-[100%] lg:w-auto text-[30px] lg:text-[25px] text-pj_blk  ">
+                    <button class='px-2 py-1 rounded-full focus:ring-2 focus:ring-inset focus:ring-red-900 text-sm/6 bg-pj_offwhite bx bx-left-arrow-alt'></button>
+                    <button class='px-2 py-1 rounded-full focus:ring-2 focus:ring-inset focus:ring-red-900 text-sm/6 bg-pj_offwhite bx bx-right-arrow-alt'></button>
                 </div>
             </div>
             <!-- container  -->
-            <div class="grid grid-cols-1 gap-4 py-32 lg:grid-cols-4 md:grid-cols-2">
+            <div class="grid grid-cols-1 gap-4 pb-16 lg:py-32 lg:grid-cols-4 md:grid-cols-2">
                 <!-- Dorfus  -->
                 <div class="lg:h-[279px] bg-pj_whited border-[1px] border-pj_offwhite p-6 h-[250px] rounded-md  flex flex-col justify-between">
                     <div>
@@ -324,16 +308,74 @@
 			   <form>
 			   	    <div class="relative hidden mb-8 lg:flex">
 						 <input type="email" required name="email"  placeholder="Enter your email" class="w-[100%] ring-1 ring-pj_whitedark py-3 mr-3 rounded-lg pl-7 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-pj_green">
-			   	    	<button type="submit" class="absolute top-0 right-0 py-2 m-1 rounded-lg linned px-14 text-pj_white focus:ring-2 focus:ring-inset focus:ring-pj_green sm:text-sm/6 bg-pj_blue">Subscribe</button>
+			   	    	<button type="submit" class="absolute top-0 py-2 m-1 rounded-lg right-3 linned px-14 text-pj_white focus:ring-2 focus:ring-inset focus:ring-pj_green sm:text-sm/6 bg-pj_blue">Subscribe</button>
 			   	    </div>
 			   	    <div class="mb-10 lg:hidden">
 						 <input type="email" required name="email"  placeholder="Enter your email" class="w-[100%] ring-1 ring-pj_whitedark py-3 mr-3 rounded-lg pl-7 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-pj_green">
 			   	    	<button type="submit" class="py-3 mt-4 rounded-lg linned px-14 text-pj_white focus:ring-2 focus:ring-inset focus:ring-pj_green sm:text-sm/6 bg-pj_blue w-[100%]">Subscribe</button>
 			   	    </div>
-			   	    <p class="w-[100%] lg:w-[80%] m-auto font-gilroy_regular text-[12px] lg:text-[15px] text-pj_blk/20" >We’ll never share your details with third parties. View our Privacy Policy for more info.</p>
+			   	    <p class="w-[100%] lg:w-[80%] m-auto font-gilroy_regular text-[12px] lg:text-[15px] text-pj_blk/65" >We’ll never share your details with third parties. View our Privacy Policy for more info.</p>
 			   </form>
 			</div>
 		</section>
     </main>
+    <!-- Footer -->
+	<footer>
+		<section class="flex flex-col-reverse justify-between px-8 py-16 lg:flex-row bg-pj_blk lg:px-32 text-pj_whited">
+			   <!-- Logo  -->
+			   <div class="w-[100%] lg:w-[40%]">
+			   	    <div class=" w-[100%] lg:w-[70%]">
+						<a href="index.html" class="font-rubik font-bold text-[18px] bg-gradient_bgru rubic lg:text-[28px]">Brainwave</a>
+						<p class="font-gilroy_regular text-[14px] leading-[40px] my-8 lg:my-12 lg:text-[19px] bg-gradient_bgh rubic">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+						<!-- Social Icons  -->
+						<ul class="flex gap-8 linnemenu">
+                            <li><a class='bx bxl-twitter' href="#"></a></li>
+                            <li><a class='bx bxl-facebook-square' href="#"></a></li>
+                            <li><a class='bx bxl-instagram' href="#"></a></li>
+                            <li><a class='bx bxl-linkedin-square' href="#"></a></li>
+                        </ul>
+				    </div>
+			   </div>
+			   <!-- Contact Us  -->
+			   <div class=" linneul grid grid-cols-4 gap-0 lg:gap-3 mb-16 w-[full]">
+				    <div>
+                        <span>Company</span>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <span>Product</span>
+                        <ul>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Help desk</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <span>Services</span>
+                        <ul>
+                            <li><a href="#">Digital Marketing</a></li>
+                            <li><a href="#">Content Writing</a></li>
+                            <li><a href="#">SEO for Business</a></li>
+                            <li><a href="#">UI Design</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <span>Legal</span>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                        </ul>
+                    </div>
+			   </div>
+		</section>
+	</footer>
 </body>
 </html>
