@@ -10,6 +10,7 @@ module.exports = {
         job_cat_explore: "#68D585",
         hrd_bg_col: "#68D5851A",
         bg_form_col: "#473BF0",
+        
       },
       fontFamily: {
         gilroy_regular: ["Gilroy_Regular", "sans-serif"],
