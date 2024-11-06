@@ -94,7 +94,7 @@ nav .rubic {
 
 .linneul a {
   font-size: 17px;
-  color: #ffcd33;
+  color: #7D818D;
   font-family: "Gilroy_Regular";
   @media (max-width : 773px) {
     font-size: 12px;
@@ -102,7 +102,7 @@ nav .rubic {
 }
 
 .linneul a:hover {
-  color: #ff9d00;
+  color: #68D585;
   text-shadow: 0 0 10px rgb(17, 255, 239);
 }
 
@@ -911,10 +911,6 @@ video {
   width: 65.2188px;
 }
 
-.w-\[80\%\]{
-  width: 80%;
-}
-
 .w-\[full\]{
   width: full;
 }
@@ -965,10 +961,6 @@ video {
 
 .gap-4{
   gap: 1rem;
-}
-
-.gap-40{
-  gap: 10rem;
 }
 
 .gap-6{
@@ -1087,12 +1079,12 @@ video {
   background-image: linear-gradient(to bottom, #473BF066, #34B3F266);
 }
 
-.bg-gradient_bgru{
-  background-image: linear-gradient(to right, #f00, #0f0, #00f);
-}
-
 .bg-gradient_bgh{
   background-image: linear-gradient(to bottom, #473BF0, #34B3F2);
+}
+
+.bg-gradient_bgru{
+  background-image: linear-gradient(to right, #f00, #0f0, #00f);
 }
 
 .p-14{
@@ -1173,11 +1165,6 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.py-32{
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -1186,6 +1173,10 @@ video {
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.pb-16{
+  padding-bottom: 4rem;
 }
 
 .pl-7{
@@ -1260,6 +1251,11 @@ video {
   font-size: 35px;
 }
 
+.text-sm\/6{
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1297,11 +1293,6 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-pj_bgreen{
-  --tw-text-opacity: 1;
-  color: rgb(86 205 93 / var(--tw-text-opacity));
-}
-
 .text-pj_blk{
   --tw-text-opacity: 1;
   color: rgb(22 28 45 / var(--tw-text-opacity));
@@ -1314,11 +1305,6 @@ video {
 .text-pj_blue{
   --tw-text-opacity: 1;
   color: rgb(71 59 240 / var(--tw-text-opacity));
-}
-
-.text-pj_dark{
-  --tw-text-opacity: 1;
-  color: rgb(125 129 141 / var(--tw-text-opacity));
 }
 
 .text-pj_green{
@@ -1631,6 +1617,11 @@ video {
   .lg\:px-\[23px\]{
     padding-left: 23px;
     padding-right: 23px;
+  }
+
+  .lg\:py-32{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .lg\:py-4{
