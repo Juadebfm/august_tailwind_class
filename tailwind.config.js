@@ -9,7 +9,8 @@ module.exports = {
         js_deep_blue: "#161C2D",
         js_green: "#68D585",
         js_red: "#F64B4B",
-        js_bg2: "#F4F7FA"
+        js_bg2: "#F4F7FA",
+        js_offwhite:"#E7E9ED"
       },
       fontFamily: {
         gilroy_regular: ["Gilroy_Regular", "sans-serif"],
