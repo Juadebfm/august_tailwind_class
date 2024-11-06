@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="font-gilroy_regular">
-    <header class="bg-header_bg_color py-10">
-      <nav class="flex justify-between items-center px-10 ">
+  <body class="font-gilroy_regular text-js_deep_blue">
+    <header class="bg-header_bg_color px-10">
+      <nav class="flex justify-between items-center mb-12">
         <span class="text-2xl font-bold cursor-pointer"
           ><a href="#"></a>Brainwave.io</span
         >
@@ -20,28 +24,42 @@
         </ul>
 
         <div class="space-x-6 text-sm font-semibold">
-          <button>Login</button>
+          <button>Log In</button>
           <button>Sign Up</button>
         </div>
       </nav>
 
       <!-- Hero Section  -->
-      <section class=" flex px-20">
-        <div>
-          <!-- h1 p  -->
-          <div>
-          <h1>Find a dream job that changes life.</h1>
-          <p>
-            With lots of unique blocks, you can easily build a page without
-            coding. Build your next job website.
-          </p>
+      <section class="grid grid-cols-2 px-11">
+        <div class="justify-center items-center m-auto p-3 ">
+          <!-- h1 & p  -->
+          <div class="justify-center items-center m-auto">
+            <h1 class="text-5xl font-bold  w-[70%] leading-[60px]">
+              Find a dream job that changes life.
+            </h1>
+            <p
+              class="mt-3 w-[60%] leading-7 tracking-wide text-js_deep_blue/65"
+            >
+              With lots of unique blocks, you can easily build a page without
+              coding. Build your next job website.
+            </p>
           </div>
 
-          <form action="" class="bg-js_blue p-3.5">
-            <label for=""></label>
-            <input type="job title" placeholder="Job title or keyword">
+          <form
+            action="Select"
+            class="bg-js_blue mt-8 mb-4 p-4 rounded-md space-x-3 flex items-center justify-center m-auto placeholder:text-sm"
+          >
+            <input
+              type="job title"
+              placeholder="Job title or keyword"
+              class="p-2 rounded-md w-60 h-11"
+            />
 
-            <select name="options" id="options">
+            <select
+              name="options"
+              id="options"
+              class="p-2.5 rounded-md w-60 h-11"
+            >
               <option value="">City</option>
               <option value="">Lagos</option>
               <option value="">Abuja</option>
@@ -53,17 +71,33 @@
               <option value="">Warri</option>
             </select>
 
-            <button class="bg-js_deep_blue text-white">Search</button>
+            <button class="bg-js_deep_blue text-white p-2 rounded-md w-36 h-11">
+              Search
+            </button>
           </form>
 
-          <small>Try Product Designer, Software Engineer etc.</small>
+          <small class="text-js_deep_blue/65">Try Product Designer, Software Engineer etc.</small>
         </div>
 
         <!-- img div  -->
         <div>
-          <img src="../job-site img/header-lady.png" class="w-[481px]" alt="Header image" />
+          <img
+            src="../job-site img/header-lady.png"
+            alt="Header image"
+            class="w-[481px] h-[685px]"
+          />
+          <!-- <img src="../job-site img/dots.png"  alt="Dotted Pattern" class="w-[107px] h-[109px]">
+          <img src="../job-site img/red-circle.png" alt="Red Semicircle" class="w-[170px] h-[120px]"> -->
         </div>
       </section>
+
     </header>
+    
+    <main>
+      <section>
+        <h2>Big companies are here</h2>
+        <p>With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes. You have a business to run. Stop worring about cross-browser bugs, designing new pages.</p>
+      </section>
+    </main>
   </body>
 </html>
