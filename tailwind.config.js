@@ -14,6 +14,7 @@ module.exports = {
         job_col_red: "#F64B4B",
         career_bg: "#F4F7FA",
         career_text_bg: "#FFFFFF",
+        foot_tran_color: "#ffffff41",
         
       },
       fontFamily: {
