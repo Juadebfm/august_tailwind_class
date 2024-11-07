@@ -610,6 +610,11 @@ video {
   margin-bottom: 2rem;
 }
 
+.my-12{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -640,6 +645,10 @@ video {
 
 .mt-4{
   margin-top: 1rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
 }
 
 .block{
@@ -780,6 +789,10 @@ video {
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -1045,6 +1058,10 @@ video {
 
 .font-bold{
   font-weight: 700;
+}
+
+.uppercase{
+  text-transform: uppercase;
 }
 
 .leading-\[45px\]{
