@@ -4,8 +4,589 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body class="font-gilroy px-8  py-4 overflow-x-hidden h-screen">
+    <header>
+    <div
+      style="
+        background-image: url('BG\ \(7\).png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      "
+    >
+      <!-- navsection -->
+      <nav class="flex items-center justify-between ">
+        <span class="font-rubik text-[16px] font-bold text-p_span"
+          >Brainwave.io</span
+        >
+        <ul
+          class="flex items-center justify-between gap-4 font-semibold text-p_span "
+        >
+          <li class="hidden sm:block"><a href="/">Demos</a></li>
+          <li class="hidden sm:block"><a href="/">Pages</a></li>
+          <li class="hidden sm:block"><a href="/">Support</a></li>
+          <li class="hidden sm:block"><a href="/">Contact</a></li>
+        </ul>
+        <div
+          class="flex items-center justify-center gap-4 font-semibold text-p_span"
+        >
+          <button>login</button>
+          <button>signup</button>
+        </div>
+      </nav>
+      <!-- end -->
+      <!-- hero_section -->
+      <section class="mt-16 ">
+        <div class="grid md:grid-cols-2  ">
+          <div class="">
+            <div>
+              <h1
+                class="text-[46px] leading-none flex justify-center m-auto font-bold md:w-[426px] md:mt-24 sm:w-2/3 text-p_span"
+              >
+                Find a dream job that changes life.
+              </h1>
+              <p
+                class="flex items-center justify-center m-auto text-[19px] mb-8 md:w-2/3 mt-8 text-p_span sm:text-[18px]"
+              >
+                With lots of unique blocks, you can easily build a page without
+                coding. Build your next job website.
+              </p>
+            </div>
+
+            <div>
+              <div class="flex items-center justify-center m-auto ">
+                <input type="info" placeholder="Job title or keyword" />
+                <input type="info" placeholder="city" />
+                <button>search</button>
+              </div>
+              <div class="mt-8 flex items-center justify-center ">
+                <p>Try Product Designer, Software Engineer etc.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class=" md:w-[390px] sm:w-[190px] ">
+            <img src="office.png" alt="" />
+          </div>
+          
+        </div>
+      </section>
+    </div>
+    </header>
+
+    <!-- Big Companies Are Here -->
+    <section class="mt-16">
+      <div class="flex items-center content-center flex-col">
+        <h1
+          class="text-[26px] mb-8 text-p_header_img text-p_span font-semibold"
+        >
+          Big companies are here
+        </h1>
+        <p class="text-[19px] md:w-[686px] text-center text-p_span">
+          With lots of unique blocks, you can easily build a page without
+          coding. Build your next consultancy website within few minutes. You
+          have a business to run. Sto p worring about cross-browser bugs,
+          designing new pages.
+        </p>
+      </div>
+      <!-- 4 logo -->
+      <div class="">
+        <div class="w-[96px] flex items-center justify-center m-auto gap-8">
+          <img src="Logo 1 (4).png" alt="logo" />
+          <img src="Logo 2 (2).png" alt="" />
+          <img src="Logo 3 (1).png" alt="" />
+          <img src="Logo 4.png" alt="" />
+        </div>
+      </div>
+
+      <!-- 2 logo -->
+      <div>
+        <div
+          class="w-[96px] flex items-center justify-center m-auto gap-8 mt-4 mb-12"
+        >
+          <img src="Logo 5 (1).png" alt="" />
+          <img src="Logo 6.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- animation -->
+    <section class="font-gilroy_regular">
+      <section class="bg-job_cat_bg min-h-screen px-[40px] md:px-32 text-white">
+        <div
+          class="flex flex-col lg:flex-row items-start lg:items-end justify-between md:pt-16 lg:pt-0"
+        >
+          <div>
+            <h2 class="text-[36px] font-gilroy_bold">Jobs by category</h2>
+            <p
+              class="text-[19px] leading-[25px] font-gilroy_regular text-white/40 w-full md:w-[65%] sm:w-[] mt-4"
+            >
+              With lots of unique blocks, you can easily build a page without
+              coding.
+            </p>
+          </div>
+          <a
+            href="#"
+            class="text-job_cat_explore hover:text-job_cat_explore/70 duration-200 transition-all ease-linear mt-4 lg:mt-0"
+          >
+            <span>Explore all categories</span>
+            <i class="bx bx-right-arrow-alt"></i>
+          </a>
+        </div>
+        <!-- Boxes -->
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]"
+          >
+            <div>
+              <h4>Design</h4>
+              <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
+                47 Jobs
+              </p>
+            </div>
+            <div
+              class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+            >
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+          </div>
+          <div
+            class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]"
+          >
+            <div>
+              <h4>Design</h4>
+              <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
+                47 Jobs
+              </p>
+            </div>
+            <div
+              class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+            >
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+          </div>
+          <div
+            class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]"
+          >
+            <div>
+              <h4>Design</h4>
+              <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
+                47 Jobs
+              </p>
+            </div>
+            <div
+              class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+            >
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+          </div>
+          <div
+            class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]"
+          >
+            <div>
+              <h4>Design</h4>
+              <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
+                47 Jobs
+              </p>
+            </div>
+            <div
+              class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+            >
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+          </div>
+          <div
+            class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]"
+          >
+            <div>
+              <h4>Design</h4>
+              <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
+                47 Jobs
+              </p>
+            </div>
+            <div
+              class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+            >
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+          </div>
+          <div
+            class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]"
+          >
+            <div>
+              <h4>Design</h4>
+              <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
+                47 Jobs
+              </p>
+            </div>
+            <div
+              class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+            >
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+
+
+    <!-- main_section -->
+    <section>
+      <!-- for text -->
+      <div class="mt-12">
+        <h2
+          class="flex items-center justify-center text-p_span text-[36px] font-bold"
+        >
+          Find jobs with 3 easy steps
+        </h2>
+        <p
+          class="flex items-center justify-center text-[15px] md:w-[589px] text-p_span m-auto text-center sm:text-lg"
+        >
+          With lots of unique blocks, you can easily build a page without
+          coding. Build your next landing page.
+        </p>
+      </div>
+      <!-- for the man image and numbers -->
+      <div
+        class="master_flexer md:flex items-center justify-center gap-12 mt-12 mb-16 "
+      >
+        <div
+          style="position: relative; display: inline-block"
+          class="w-[247px] rounded"
+        >
+          <img src="Bitmap (3).png" alt="man" style="display: block" />
+
+          <div
+            style="
+              position: absolute;
+              bottom: 10px;
+              right: 10px;
+              background-color: #2e3b4e;
+              color: #fff;
+              padding: 10px 15px;
+              border-radius: 5px;
+            "
+            class="flex gap-3"
+          >
+            <div style="position: relative; display: inline-block">
+              <!-- master_image -->
+              <img src="Oval (4).png" alt="" />
+              <img
+                src="Path (2).png"
+                alt=""
+                style="position: absolute; top: 10px; left: 10px; width: 15px"
+              />
+            </div>
+
+            <div>
+              <p
+                style="
+                  margin: 0;
+                  color: #ffffff80;
+                  font-size: 14px;
+                  font-weight: bold;
+                "
+              >
+                New Invitation!
+              </p>
+              <p style="margin: 0; font-size: 14px">
+                Interview invitation at Greener
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex gap-3 mb-4">
+            <div
+              style="
+                position: relative;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img src="Oval (3).png" alt="" />
+              <span
+                style="
+                  position: absolute;
+                  color: white;
+                  font-size: 17px;
+                  font-weight: bold;
+                "
+                >1</span
+              >
+            </div>
+            <div>
+              <h3 class="text-p_span font-bold text-[21px]">
+                Search for a job
+              </h3>
+              <p class="w-[339px] text-[19px]" style="color: #161c2d89">
+                With lots of unique blocks, you can easily build a page without
+                coding.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-3 mb-4">
+            <div
+              style="
+                position: relative;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img src="Oval (3).png" alt="" />
+              <span
+                style="
+                  position: absolute;
+                  color: white;
+                  font-size: 17px;
+                  font-weight: bold;
+                "
+                >2</span
+              >
+            </div>
+            <div>
+              <h3 class="text-p_span font-bold text-[21px]">
+                Search for a job
+              </h3>
+              <p class="w-[339px] text-[19px]" style="color: #161c2d89">
+                With lots of unique blocks, you can easily build a page without
+                coding.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-3 mb-4">
+            <div
+              style="
+                position: relative;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img src="Oval (3).png" alt="" />
+              <span
+                style="
+                  position: absolute;
+                  color: white;
+                  font-size: 17px;
+                  font-weight: bold;
+                "
+                >3</span
+              >
+            </div>
+            <div>
+              <h3 class="text-p_span font-bold text-[21px]">
+                Search for a job
+              </h3>
+              <p class="w-[339px] text-[19px]" style="color: #161c2d89">
+                With lots of unique blocks, you can easily build a page without
+                coding.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- fourth_section -->
+    <section class="fourth_section">
+      <div class="px-20 mt-12">
+        <h2 class="text-p_span font-bold text-[26px] ">Featured jobs</h>
+        <p
+          style="
+            color: #2e3b4e96;
+            width: 353px;
+            margin-bottom: 3rem;
+            font-size: 19px;
+          "
+        >
+          With lots of unique blocks, you can easily build a page without
+          coding.
+        </p>
+      </div>
+
+      <div class=" px-20 lg:flex items-center  justify-center gap-8 mb-20 md:grid md:grid-rows-1 sm:grid sm:grid-rows-1">
+        <!-- four_card -->
+        <div class="card shadow-sm ">
+          <div class="px-4">
+            <small class="text-p_bg_man font-bold ">Full-time</small>
+            <h3 class="text-p_span font-bold w-[183px] text-[21px] ">Senior Software Engineer</h3>
+            <p style="color: #2e3b4e; font-size: 13px ">New York, USA</p>
+          </div>
+
+          <div class="flex gap-3 mt-5 px-4">
+            <img src="Oval (5).png" alt="" />
+            <p class="font-bold ">Dorfus</p>
+          </div>
+        </div>
+        <div class="card shadow-sm ">
+          <div class="px-4">
+            <small class="text-job_cat_box_blue font-bold ">REMOTE</small>
+            <h3 class="text-p_span font-bold w-[183px] text-[21px] ">Product Designer</h3>
+            <p style="color: #2e3b4e; font-size: 13px">Lake colby,uk</p>
+          </div>
+
+          <div class="flex gap-3 mt-5 px-4">
+            <img src="Logo.png" alt="" />
+            <p class="font-bold">cowork</p>
+          </div>
+        </div>
+        <div class="card shadow-sm ">
+          <div class="px-4">
+            <small class="text-p_bg_man font-bold ">Full-time</small>
+            <h3 class="text-p_span font-bold w-[183px] text-[21px] ">UX Designer</h3>
+            <p style="color: #2e3b4e; font-size: 13px">califonia, usa</p>
+          </div>
+
+          <div class="flex gap-3 mt-5 px-4">
+            <img src="Logo (1).png" alt="" />
+            <p class="font-bold">Askimat</p>
+          </div>
+        </div>
+        <div class="card shadow-sm ">
+          <div class="px-4">
+            <small class="text-p_red font-bold ">PART-TIME</small>
+            <h3 class="text-p_span font-bold w-[183px] text-[21px] ">Full-stack Web Developer</h3>
+            <p style="color: #2e3b4e; font-size: 13px">Katlynburgh, Sweden</p>
+          </div>
+
+          <div class="flex gap-3 mt-5 px-4">
+            <img src="Oval (6).png" alt="" />
+            <p class="font-bold">Greener</p>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </section> 
+    
+    <!-- fifth_section -->
+     <div class="fortext_and_threecards bg-p_fifth_sec">
+      <!-- start -->
+     <div class="fortextandp pt-8 ">
+     <h2 class="flex items-center justify-center  font-bold text-p_span text-[36px] md:text-[42px] ">News that helps</h2>
+     <p class="flex items-center justify-center text-[19px] w-[503px]  text-center m-auto mb-8 font-gilroy_semibold">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+     </div>
+     <div class="for_card_intext lg:flex items-center justify-center gap-4 md:grid md:grid-rows-1 sm:items-center sm:justify-center   ">
+     <!-- 3cards -->
+         <div class="mb-16  ">
+         <div>
+          <img src="Bitmap (4).png" alt="" class="rounded-t-md w-[287px] ">
+          
+          </div>
+          <div class=" bg-p_white pb-4">
+          <small style="color: #161c2d89 ;padding-left: 1rem; ">Carrer</small>
+          <h3 class="text-p_span font-bold text-[16px] w-[287px]  pl-4">How to win any job you want. Get started with 5 steps.</h3>
+        </div>
+        </div>
+
+        <div class="mb-16">
+          <div>
+           <img src="Bitmap (5).png" alt="" class="rounded-t-md w-[287px]">
+           
+           </div>
+           <div class=" bg-p_white pb-4">
+           <small style="color: #161c2d89 ;padding-left: 1rem; ">Lifestyle</small>
+           <h3 class="text-p_span font-bold text-[16px] w-[287px]  pl-4">10 ways to reduce your office work depression.</h3>
+         </div>
+         </div>
+         
+         <div class="mb-16">
+          <div>
+           <img src="Bitmap (6).png" alt="" class="rounded-t-md w-[287px]">
+           
+           </div>
+           <div class=" bg-p_white pb-4">
+           <small style="color: #161c2d89 ;padding-left: 1rem; ">Lifestyle</small>
+           <h3 class="text-p_span font-bold text-[16px] w-[287px]  pl-4">Why should you work as a team even on small projects.</h3>
+         </div>
+         </div>
+     </div>
+     <!-- end -->
+     </div>
+
+      <!-- six_section -->
+     <section>
+      <div class="mt-16 flex items-center justify-center">
+        <img src="Oval (8).png" alt="" class="w-[78px]">
+      </div>
+      <div class="flex items-center justify-center text-center flex-col">
+        <h2 class="mt-8 text-p_span font-bold text-[32px] w-[487] ">Get our latest updates</h2>
+        <p style="width: 19px;width: 502px;color: #161c2d89;margin-bottom: 2rem;">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+      </div>
+      <!-- input_btn -->
+       <div>
+        <div class="flex flex-col items-center">
+          <form class="flex items-center space-x-2">
+            <input type="email" placeholder="Enter your email" class="border-gray-700 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 "/><button type="submit" class="bg-job_cat_box_blue text-white px-4 rounded-sm">subscribe</button></form>
+        </div>
+        <div class="mt-6 ">
+          <p class="flex items-center justify-center text-[15px] w-[365px] text-center m-auto mb-24">We’ll never share your details with third parties.
+            View our Privacy Policy for more info.</p>
+        </div>
+       </div>
+       
+     </section>
+
+     <!-- footer_section -->
+      <footer class="bg-p_span">
+        <div class=" lg:flex items-center justify-center px-16 py-16 gap-6 grid md:grid-rows-1 md:items-center md:justify-center ">
+        <div>
+          <span class="text-[24px]   text-white font-gilroy_semibold ">Brainwave.io</span>
+          <p class="text-[15px] w-[274px] text-white/45 mt-2">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+          <div class="lg:text-2xl md:text-[4xl] mt-2">
+            <i class="text-green-600"><i class='bx bxl-twitter'></i></i> <i class="text-white/35"><i class='bx bxl-facebook-square'></i></i> <i><i class='bx bxl-instagram text-white/35' ></i></i> <i><i class='bx bxl-linkedin-square text-white/35'></i></i>
+          </div>
+        </div>
+        <div>
+          <ul class="font-gilroy_light ">
+            <li class="mb-4 text-white/35"><a href="/">company</a></li>
+            <li class="text-white"><a href="/">About us</a></li>
+            <li class="text-white"><a href="/">Contact us</a></li>
+            <li class="text-white"><a href="/">Carrers</a></li>
+            <li class="text-white"><a href="/">Press</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+          <li class="text-white/35"><a href="/">Product</a></li>
+          <li class="text-white"><a href="/">Features</a></li>
+          <li class="text-white"><a href="/">Pricing</a></li>
+          <li class="text-white"><a href="/">News</a></li>
+          <li class="text-white"><a href="/">Help desk</a></li>
+          <li class="text-white"><a href="/">Support</a></li>
+          </ul>
+        </div>
+        <div>
+       <ul>
+          <li class="mb-4 text-white/35"><a href="/">Services</a></li>
+          <li class="text-white"><a href="/">Digital marketing</a></li>
+          <li class="text-white"><a href="/">Content Writing</a></li>
+          <li class="text-white"><a href="/">SEO for Business</a></li>
+          <li class="text-white"><a href="/">Ui Design</a></li>
+       </ul>  
+        </div>
+        <div>
+          <ul>
+            <li class="text-white/35 mb-4"><a href="/">Legal</a></li>
+            <li class="text-white"><a href="/">Privacy policy</a></li>
+            <li class="text-white"><a href="/">Terms & Condition</a></li>
+            <li class="text-white"><a href="/">Return Policy</a></li>
+          </ul>
+        </div>
+        </div>
+      </footer>
+     
   </body>
 </html>
