@@ -4,22 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body class="font-dm_sans overflow-x-hidden h-screen bg-p_bg text-White">
-    <header>
-        <nav class="flex items-center justify-between">
-            <span class="font-poppings font-semibold">Startup 3</span>
-            <ul>
-                <li><a href="#">Subscribe</a></li>
-                <li><a href="#">Features</a></li>
-                <button class="w-[100px] h-[40px] rounded-full bg-p_nav_btn text-green">Sign up</button>
-            </ul>
+<body>
+    <header class="bg-bach bachimg">
+        <nav class="grid grid-cols-[40%,60%] items-center p-8">
+            <span class="text-[30px] font-gilroy_bold">Brainwave.io</span>
+            <div class="flex">
+                <div class="justify-between w-[100%] hidden lg:flex">
+                    <ul class="flex gap-16  text-job_cat_bg font-bold text-[15px]">
+                        <li><a href="#">Demos</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <div class="gap-16 flex  text-job_cat_bg font-bold text-[15px]">
+                        <Button>Login</Button>
+                        <Button>Sign up</Button>
+                    </div>
+                </div>
+                <div class="block lg:hidden ml-auto text-[35px]">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
         </nav>
-        <!-- hero -->
-        <section class="mt-[4rem] flex flex-col items-center justify-center">
-            <h1 class="text-[70px] leading none font-poppings font-bold"></h1>
+        <section class="p-[2rem] py-[4rem] md:p-[7rem]">
+            <div class="w-[100%] md:w-[45%]">
+                <h1 class="text-[30px] md:text-[60px] leading-[45px] md:leading-[65px] mb-4 font-gilroy_bold">Find a dream job that changes life.</h1>
+                <p class="text-[19px] font-gilroy_regular opacity-70 text-job_cat_bg">With lots of unique blocks, you can easily build a page without coding. Build your next job website.</p>
+            </div>
+            <div class="w-[100%] md:w-[60%]">
+                <form class="bg-job_cat_box_blue mb-4 p-4 md:p-8 rounded-md flex flex-col md:flex-row gap-4 md:gap-8 mt-16">
+                    <input type="text" name="text" placeholder="Job tittle or Keyword" class=" rounded-md w-[100%] md:w-[250px] p-3 ">
+                    <select  class="rounded-md w-[100%] md:w-[250px] cursor-pointer p-3.5">
+                        <option value="1">City</option>
+                        <option value="2">Ibadan</option>
+                        <option value="3">Kaduna</option>
+                        <option value="4">Port Harcourt</option>
+                        <option value="5">Benin City</option>
+                        <option value="6">Zaria</option>
+                        <option value="7">Kano</option>
+                        <option value="7">Ilorin</option>
+                        <option value="7">Jos</option>
+                        <option value="7">Enugu</option>
+                    </select>
+                    <button class="bg-job_cat_bg w-[100%] md:w-[200px] p-3 rounded-md text-white">
+                        Search
+                    </button>
+                </form>
+                <p>Try Product Designer, Software Engineer etc.</p>
+            </div>
         </section>
     </header>
- 
+    <main></main>
+    <footer></footer>
 </body>
 </html>
