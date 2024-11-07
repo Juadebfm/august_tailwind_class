@@ -3,3 +3,15 @@ Right arrow
 
 Left arrow
 <i class='bx bx-left-arrow-alt' ></i>
+
+Twitter
+<i class='bx bxl-twitter'></i>
+
+Facebook
+<i class='bx bxl-facebook-square' ></i>
+
+Instagram
+<i class='bx bxl-instagram' ></i>
+
+Linkeden
+<i class='bx bxl-linkedin-square' ></i>
