@@ -1,2 +1,5 @@
 Right arrow
 <i class='bx bx-right-arrow-alt'></i>
+
+Left arrow
+<i class='bx bx-left-arrow-alt' ></i>
