@@ -605,6 +605,11 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .mb-12{
   margin-bottom: 3rem;
 }
@@ -679,6 +684,10 @@ video {
 
 .mb-1{
   margin-bottom: 0.25rem;
+}
+
+.mt-9{
+  margin-top: 2.25rem;
 }
 
 .block{
@@ -779,6 +788,18 @@ video {
 
 .h-\[450px\=\/\]{
   height: 450px=/;
+}
+
+.h-\[64px\]{
+  height: 64px;
+}
+
+.h-\[50px\]{
+  height: 50px;
+}
+
+.h-\[54px\]{
+  height: 54px;
 }
 
 .w-36{
@@ -977,6 +998,42 @@ video {
   width: 255px;
 }
 
+.w-\[499px\]{
+  width: 499px;
+}
+
+.w-\[166px\]{
+  width: 166px;
+}
+
+.w-\[4px\]{
+  width: 4px;
+}
+
+.w-\[489px\]{
+  width: 489px;
+}
+
+.w-\[495px\]{
+  width: 495px;
+}
+
+.w-\[490px\]{
+  width: 490px;
+}
+
+.w-\[485px\]{
+  width: 485px;
+}
+
+.w-\[460px\]{
+  width: 460px;
+}
+
+.w-\[470px\]{
+  width: 470px;
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -1105,6 +1162,10 @@ video {
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.text-wrap{
+  text-wrap: wrap;
+}
+
 .rounded-md{
   border-radius: 0.375rem;
 }
@@ -1228,6 +1289,14 @@ video {
 
 .p-6{
   padding: 1.5rem;
+}
+
+.p-44{
+  padding: 11rem;
+}
+
+.p-24{
+  padding: 6rem;
 }
 
 .px-10{
