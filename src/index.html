@@ -15,46 +15,50 @@
     />
   </head>
   <body class="font-gilroy_regular">
-    <header>
+    <header class="min-h-screen"
+
+    
+    style="
+    background-image: url(../img/header_bg.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+  ">
       <!-- NAV SECTION -->
-      <div
-        style="
-          background-image: url(../img/header_bg.png);
-          background-repeat: no-repeat;
-          background-size: cover;
-        "
-        class="min-h-screen"
-      >
-        <nav class="md:px-8 py-[20px] flex items-center justify-between">
+      <div>
+        <nav class="px-2 md:px-8 py-[20px] flex items-center justify-between">
           <span class="font-extrabold text-[25px]">Brainwave.io</span>
-          <ul class="flex items-center justify-between font-[600]">
-            <a href="#"> <li class="mx-[14px]">Demo</li></a>
-            <a href="#"><li class="mx-[14px]">Pages</li></a>
-            <a href="#"><li class="mx-[14px]">Support</li></a>
-            <a href="#"> <li class="mx-[14px]">Contact</li></a>
-          </ul>
-          <div class="font-[600]">
-            <button class="mx-[14px]">Log-in</button>
-            <button class="mx-[14px]">Sign-up</button>
+          
+          <div class=" items-center justify-between font-[600] hidden md:flex">
+            <ul class="flex items-center justify-between font-[600]">
+              <a href="#"> <li class="mx-[14px]">Demo</li></a>
+              <a href="#"><li class="mx-[14px]">Pages</li></a>
+              <a href="#"><li class="mx-[14px]">Support</li></a>
+              <a href="#"> <li class="mx-[14px]">Contact</li></a>
+            </ul>
+            <div class="font-[600]">
+              <button class=" md:mx-[14px]">Log-in</button>
+              <button class=" md:mx-[14px]">Sign-up</button>
+            </div>
+
           </div>
         </nav>
 
         <!-- HERO SECTION -->
-        <div class="min-h-[80vh] px-[40px] md:px-52 py-28">
-          <h1 class="w-[40%] font-[700] text-[40px] text-4xl">
+        <div class=" px-[40px] mt-28 md:mt-0 md:px-52 py-28">
+          <h1 class=" md:text-left text-center md:w-[40%] font-[700] text-[40px] text-4xl">
             Find a dream job that changes life.
           </h1>
-          <p class="w-[40%] text-[14px] mt-3 text-job_cat_bg/50">
+          <p class=" md:text-left text-center md:w-[40%] text-[14px] mt-3 text-job_cat_bg/50">
             With lots of unique blocks, you can easily build a page without
             coding. Build your next job website.
           </p>
           <form
             action=""
-            class="py-5 w-[64%] p-[15px] mt-5 bg-[#473BF0] rounded-md"
+            class="py-5 p-[15px] w-[100%] md:w-[80%] mt-5 bg-[#473BF0] rounded-md"
           >
             <label for="title"></label>
             <input
-              class="h-8 rounded-md me-2 placeholder:w-[70%] placeholder:px-3 placeholder:text-[14px]"
+              class="h-8  rounded-md me-2 placeholder:w-[70%] placeholder:px-3 placeholder:text-[14px]"
               type="text"
               id="title"
               name="title"
@@ -71,7 +75,7 @@
             />
 
             <button
-              class="rounded-md text-center bg-black text-white px-7 py-1.5 mx-auto"
+              class="rounded-md md:text-center bg-black text-white px-7 py-1.5 mx-auto "
             >
               search
             </button>
@@ -94,13 +98,13 @@
           have a business to run. Stop worring about cross-browser bugs,
           designing new pages.
         </p>
-        <div class="mx-auto w-[500px] mt-16">
+        <div class="mx-auto w=[60%] md:w-[500px] mt-16">
           <img src="../img/header_Logos.png" alt="" />
         </div>
       </div>
     </section>
 
-    <section class="bg-job_cat_bg min-h-screen px-[40px] md:px-32 py-24 text-white"
+    <section  class="bg-job_cat_bg min-h-screen px-[40px] md:px-32 py-24 text-white"
     >
       <div
         class="flex flex-col lg:flex-row items-start lg:items-end justify-between md:pt-16 lg:pt-0"
@@ -223,18 +227,19 @@
         <h1 class="text-job_cat_bg text-[26px] font-bold mt-16">
           Find jobs with 3 easy steps
         </h1>
-        <p class="text-job_cat_bg/50 w-[36%] mt-3 mx-auto">
+        <p class="text-job_cat_bg/50 md:w-[36%] mt-3 mb-3 mx-auto">
           With lots of unique blocks, you can easily build a page without
           coding. Build your next landing page.
         </p>
       </div>
 
-      <div class="flex items-center justify-center mx-auto mt-20 w-[70%]">
-        <div class="me-10 ms-20 w-[350px] h-[450px]">
+      <div class=" md:flex md:items-center md:justify-between mx-auto md:mt-20 md:w-[70%]">
+
+        <div class="md:me-10 mx-auto md:ms-20 w-[350px] h-[450px]">
           <img src="../img/smiling_man.png" alt="A smiling interviewee" />
         </div>
 
-        <div class="mb-20">
+        <div class="mx-auto">
           <div class="flex items-start justify-center mb-8">
             <div
               class="me-2 py-0.5 px-2.5 rounded-full bg-[#473BF0] text-white"
@@ -283,11 +288,11 @@
       </div>
     </section>
 
-    <section class="min-h-screen px-[40px] md:px-32 py-24 text-job_cat_bg">
+    <section class="min-h-screen px-[40px] md:px-32 py-10 md:py-24 text-job_cat_bg">
       <div
         class="flex flex-col lg:flex-row items-start lg:items-end justify-between md:pt-16 lg:pt-0"
       >
-        <div>
+        <div class="text-center md:text-start">
           <h2 class="text-[36px] font-gilroy_bold">Featured jobs</h2>
           <p
             class="text-[19px] leading-[25px] font-gilroy_regular w-full md:w-[65%] mt-4 text-job_cat_bg/50"
@@ -298,15 +303,15 @@
         </div>
         <a
           href="#"
-          class="duration-200 transition-all ease-linear mt-4 lg:mt-0 bg-slate-100 p-2 rounded-md"
+          class="duration-200 transition-all ease-linear mt-4 lg:mt-0 bg-slate-100 p-2 rounded-md block mx-auto md:inline"
         >
           <i class="fa-solid fa-arrow-left me-2"></i>
           <i class="fa-solid fa-arrow-right"></i>
         </a>
       </div>
       <!-- Boxes -->
-      <div class="mt-[100px] flex items-center justify-around">
-        <div class="border rounded-md p-10 w-[23%] h-[20rem]">
+      <div class="mt-[100px] flex flex-col md:flex-row items-center justify-around gap-4 md:gap-0">
+        <div class="border rounded-md p-10 w-[80%] md:w-[23%] h-[20rem]">
           <div>
             <span class="text-[#68D585] text-[12px] font-semibold"
               >FULL-TIME</span
@@ -322,7 +327,7 @@
           </div>
         </div>
 
-        <div class="border rounded-md p-10 w-[23%] h-[20rem]">
+        <div class="border rounded-md p-10 w-[80%] md:w-[23%] h-[20rem]">
           <div>
             <span class="text-[#473BF0] text-[14px] font-semibold">Remote</span>
           </div>
@@ -336,7 +341,7 @@
           </div>
         </div>
 
-        <div class="border rounded-md p-10 w-[23%] h-[20rem]">
+        <div class="border rounded-md p-10 w-[80%] md:w-[23%] h-[20rem]">
           <div>
             <span class="text-[#68D585] text-[12px] font-semibold"
               >FULL-TIME</span
@@ -350,7 +355,7 @@
           </div>
         </div>
 
-        <div class="border rounded-md p-10 w-[23%] h-[20rem]">
+        <div class="border rounded-md p-10 w-[80%] md:w-[23%] h-[20rem]">
           <div>
             <span class="text-[#F64B4B] text-[12px] font-semibold"
               >FULL-TIME</span
@@ -377,29 +382,131 @@
         </p>
       </div>
 
-      <div class="flex items-center justify-between mt-12">
+      <div class="flex items-center flex-col gap-4 md:gap-0 md:flex-row justify-between mt-12">
         <div class="w-[300px]">
           <img src="../img/jumping_man.png" alt="" />
-          <div>
-            <h2>Career</h2>
-            <p>How to win any job you want. Get started with 5 steps.</p>
+          <div class="bg-white px-5 py-5 rounded-b-lg">
+            <h2 class="text-[12px]">Career</h2>
+            <p class="mt-4 font-bold w-[90%]">
+              How to win any job you want. Get started with 5 steps.
+            </p>
           </div>
         </div>
         <div class="w-[300px]">
           <img src="../img/thinking_woman.png" alt="" />
-          <div>
-            <h2>Career</h2>
-            <p>How to win any job you want. Get started with 5 steps.</p>
+          <div class="bg-white px-5 py-5 rounded-b-lg">
+            <h2 class="text-[12px]">Lifestyle</h2>
+            <p class="mt-4 font-bold w-[90%]">
+              10 ways to reduce your office work depression..
+            </p>
           </div>
         </div>
         <div class="w-[300px]">
           <img src="../img/talking pair.png" alt="" />
-          <div>
-            <h2>Career</h2>
-            <p>How to win any job you want. Get started with 5 steps.</p>
+          <div class="bg-white px-5 py-5 rounded-b-lg">
+            <h2 class="text-[12px]">Career</h2>
+            <p class="mt-4 font-bold w-[90%]">
+              Why should you work as a team even on small projects.
+            </p>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="md:px-32 py-5">
+      <div class="mt-10">
+        <div
+          class="border w-12 h-12 flex items-center justify-center rounded-full bg-[#68D585] mx-auto mb-5"
+        >
+          <img class="w-[20px] h-[15px]" src="../img/email-83.png" alt="" />
+        </div>
+        <div class="text-center mx-auto">
+          <h2 class="text-job_cat_bg text-[30px] font-bold">
+            Get our latest updates
+          </h2>
+          <p class="text-job_cat_bg/80 w-[40%] mt-3 mx-auto">
+            With lots of unique blocks, you can easily build a page without
+            coding. Build your next landing page.
+          </p>
+        </div>
+
+        <div
+          class="mt-10 flex md:flex-row flex-col items-center justify-between border w-[50%] md:w-[40%] mx-auto px-1 py-1 rounded-lg"
+        >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            class="placeholder:text-[16px] text-center mb-3 md:mb-0 md:text-left"
+          />
+          <button
+            class="text-white px-10 py-3 rounded-lg text-[17px] font-bold bg-[#473BF0]"
+          >
+            Subscribe
+          </button>
+        </div>
+
+        <p class="text-job_cat_bg/50 w-[35%] mx-auto mt-5 text-center mb-12">
+          We’ll never share your details with third parties. View our Privacy
+          Policy for more info.
+        </p>
+      </div>
+    </section>
+
+    <footer class="bg-[#161C2D] h-auto md:h-[80vh]">
+      <div class="md:px-[8rem] px-[40px] py-[6rem] flex items-center justify-between md:flex-row gap-5 md:gap-0 flex-col ">
+        <div class="md:w-[25%] w-[100%] flex flex-col items-start justify-between gap-4 mt-2">
+          <h2 class="text-[25px] mb-3 font-bold  text-white">Brainwave.io</h2>
+          <p class="text-[#fff]/30">
+            With lots of unique blocks, you can easily build a page without
+            coding. Build your next landing page.
+          </p>
+          <div class="flex items-start justify-center gap-4 text-[#fff]/30">
+            <a class="hover:text-[#68D585]" href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a class="hover:text-[#68D585]" href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a class="hover:text-[#68D585]" href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a class="hover:text-[#68D585]" href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class=" flex flex-col justify-between gap-5">
+          <h2 class="text-[#fff]/30 text-[13px]">Company</h2>
+          <div class="flex flex-col items-start justify-center gap-2  text-[#fff]/80">
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+            <a href="#">Careers</a>
+            <a href="#">Press</a>
+          </div>
+        </div>
+        <div class="flex flex-col items-start justify-center gap-5 mt-8">
+          <h2 class="text-[#fff]/30 text-[13px]">Product</h2>
+          <div class="flex flex-col items-start justify-center gap-2  text-[#fff]/80">
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">News</a>
+            <a href="#">Help desk</a>
+            <a href="#">Support</a>
+          </div>
+        </div>
+        <div class="flex flex-col items-start justify-center gap-5">
+          <h2 class="text-[#fff]/30 text-[13px]">Services</h2>
+          <div class="flex flex-col items-start justify-center gap-2  text-[#fff]/80">
+            <a href="#">Digital Marketing</a>
+            <a href="#">Content Writing</a>
+            <a href="#">SEO for Business</a>
+            <a href="#">UI Design</a>
+          </div>
+        </div>
+        <div class="flex flex-col items-start justify-center gap-5 mb-8">
+          <h2 class="text-[#fff]/30 text-[13px]">Legal</h2>
+          <div class="flex flex-col items-start justify-center gap-2 text-[#fff]/80">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Return Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
