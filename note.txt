@@ -15,3 +15,6 @@ Instagram
 
 Linkeden
 <i class='bx bxl-linkedin-square' ></i>
+
+Menu icon 
+<i class='bx bx-menu' ></i>

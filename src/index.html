@@ -8,43 +8,49 @@
   <link href="./output.css" rel="stylesheet" />
 </head>
 
-<body class="font-gilroy_regular text-js_deep_blue">
-  <header class="bg-header_bg_color px-10">
-    <nav class="flex justify-between items-center mb-12">
+<body class="font-gilroy_regular text-js_deep_blue overflow-x-hidden">
+  <header class="bg-header_bg_color px-5 pt-3 md:px-10 md:pt-5">
+    <nav class="flex justify-between items-center mb-12 ">
       <span class="text-2xl font-bold cursor-pointer"><a href="#"></a>Brainwave.io</span>
 
-      <ul class="flex space-x-10 text-sm cursor-pointer font-semibold">
+  <!-- menu icon -->
+<i class='bx bx-menu md:hidden' ></i>
+  <!-- menu icon -->
+
+      <ul class="md:flex space-x-10 text-sm cursor-pointer font-semibold hidden">
         <li><a href="#"></a>Demos</li>
         <li><a href="#"></a>Pages</li>
         <li><a href="#"></a>Support</li>
         <li><a href="#"></a>Contact</li>
       </ul>
 
-      <div class="space-x-6 text-sm font-semibold">
+      <div class="md:flex space-x-6 text-sm font-semibold hidden ">
         <button>Log In</button>
         <button>Sign Up</button>
       </div>
     </nav>
 
     <!-- Hero Section  -->
-    <section class="grid grid-cols-2 px-11">
-      <div class="justify-center items-center m-auto p-3">
+    <section class="md:grid md:grid-cols-2 space-y-9 justify-center items-center md:px-10">
+      <div class="justify-center items-center m-auto md:p-7 ">
         <!-- h1 & p  -->
-        <div class="justify-center items-center m-auto">
-          <h1 class="text-5xl font-bold w-[70%] leading-[60px]">
+        <div class="flex flex-col items-center md:justify-center md:items-start md:m-auto ">
+          <h1
+            class="md:text-5xl text-4xl text-center font-bold md:w-[60%] w-[90%] md:leading-[60px] md:normal-case capitalize">
             Find a dream job that changes life.
           </h1>
-          <p class="mt-3 w-[60%] leading-7 tracking-wide text-js_deep_blue/65">
+          <p
+            class="md:mt-3 mt-5 md:w-[60%] w-[80%] d:leading-7 md:tracking-wide text-js_deep_blue/65 text-center md:text-left">
             With lots of unique blocks, you can easily build a page without
             coding. Build your next job website.
           </p>
         </div>
 
         <form action="Select"
-          class="bg-js_blue mt-8 mb-4 p-4 rounded-md space-x-3 flex items-center justify-center m-auto placeholder:text-sm">
-          <input type="job title" placeholder="Job title or keyword" class="p-2 rounded-md w-60 h-11" />
+          class="bg-js_blue mt-8 md:mb-4 mb2 md:p-3 p-1 rounded-md md:space-x-3 space-y-1 md:space-y-0 md:flex items-center justify-center m-auto placeholder:text-sm">
+          <input type="job title" placeholder="Job title or keyword" class="p-2 rounded-md md:w-60 h-11 w-full" />
 
-          <select name="options" id="options" class="p-2.5 rounded-md w-60 h-11">
+          <select name="options" id="options" class="p-2.5 rounded-md w-full md:w-60 h-11">
             <option value="">City</option>
             <option value="">Lagos</option>
             <option value="">Abuja</option>
@@ -56,65 +62,68 @@
             <option value="">Warri</option>
           </select>
 
-          <button class="bg-js_deep_blue text-white p-2 rounded-md w-36 h-11">
+          <button class="bg-js_deep_blue text-white p-2 rounded-md md:w-36 h-11 w-full ">
             Search
           </button>
         </form>
 
-        <small class="text-js_deep_blue/65">Try Product Designer, Software Engineer etc.</small>
+        <small class="text-js_deep_blue/60">Try Product Designer, Software Engineer etc.</small>
       </div>
 
       <!-- img div  -->
-      <div>
-        <img src="../job-site img/header-lady.png" alt="Header image" class="w-[481px] h-[685px]" />
-        <img src="../job-site img/dots.png" alt="Dotted Pattern" class="w-[107px] h-[109px]" />
-        <img src="../job-site img/red-circle.png" alt="Red Semicircle" class="w-[170px] h-[120px]" />
+      <div class="flex justify-center items-center relative ml-16">
+        <img src="../job-site img/header-lady.png" alt="Header image" class="md:w-[481px] md:h-[685px] " />
+        <img src="../job-site img/dots.png" alt="Dotted Pattern"
+          class="md:w-[107px] w-[75px] md:h-[109px] absolute md:top-44 top-24 md:right-56 right-20 -z-10" />
+        <img src="../job-site img/red-circle.png" alt="Red Semicircle"
+          class="md:w-[170px] w-[120px] md:h-[120px] h-[80px] absolute bottom-0 left-0 -z-10" />
       </div>
     </section>
   </header>
 
   <main>
     <!-- section 1 -->
-    <section class="flex flex-col justify-center items-center m-auto p-10">
+    <section class="flex flex-col justify-center items-center m-auto md:p-10 p-5">
       <div>
-        <h2 class="flex justify-center items-center m-auto font-bold text-3xl mt-14">
+        <h2 class="flex justify-center items-center m-auto font-bold text-3xl mt-14 capitalize">
           Big companies are here
         </h2>
-        <p class="w-[620px] text-center mt-6 leading-7 text-js_deep_blue/65">
+        <p class="md:w-[620px]  text-center md:mt-6 mt-4 leading-7  text-js_deep_blue/65">
           With lots of unique blocks, you can easily build a page without
           coding. Build your next consultancy website within few minutes. You
           have a business to run. Stop worring about cross-browser bugs,
           designing new pages.
         </p>
       </div>
+
       <!-- img div  -->
-      <div class="justify-center items-center mt-5 flex flex-wrap space-x-16 w-[60%] h-[150px]">
+      <div class="md:justify-center justify-between md:items-center mt-7  flex flex-wrap  md:space-x-16 space-x-12  md:w-[60%] w-full  md:h-[150px]">
         <img src="../job-site img/makeless.png" alt="Makeless Logo" class="w-[146px] h-[24px]" />
         <img src="../job-site img/coworks.png" alt="Cowroks Logo" class="w-[155px] h-[31px]" />
         <img src="../job-site img/greener.png" alt="Greener Logo" class="w-[154px] h-[30px]" />
-        <img src="../job-site img/saas.png" alt="Saas Logo" class="w-[97px] h-[35px]" />
+        <img src="../job-site img/saas.png" alt="Saas Logo" class="w-[97px] h-[35px] " />
         <img src="../job-site img/dorfus.png" alt="Dorpus Logo" class="w-[105px] h-[28px]" />
-        <img src="../job-site img/askimat.png" alt="Askimat Logo" class="w-[115px] h-[31px]" />
+        <img src="../job-site img/askimat.png" alt="Askimat Logo" class="w-[115px] h-[31px] " />
       </div>
     </section>
 
     <!-- section 2 -->
-    <section class="bg-js_deep_blue text-white px-40 py-28">
-      <div class="flex justify-between items-end">
-        <div class="">
-          <h2 class="font-bold text-3xl">Jobs by category</h2>
-          <p class="w-80 mt-4 text-white/65">
+    <section class="bg-js_deep_blue text-white md:px-40 p-5 md:py-28 items-center justify-center m-auto flex flex-col md:block">
+      <div class="flex md:flex-row flex-col justify-between md:items-end items-center">
+        <div>
+          <h2 class="font-bold text-3xl items-center justify-center flex md:block mt-5 md:mt-0 capitalize">Jobs by category</h2>
+          <p class="w-80 md:mt-4 mt-5 text-white/65 text-center md:text-start ">
             With lots of unique blocks, you can easily build a page without
             coding.
           </p>
         </div>
 
-        <a href="#" class="text-js_green flex items-center justify-center"><span>Explore all categories</span><i
+        <a href="#" class="text-js_green flex items-center justify-center mt-3 md:mt-0"><span>Explore all categories</span><i
             class="bx bx-right-arrow-alt"></i></a>
       </div>
 
       <!-- Boxes -->
-      <div class="mt-16 grid grid-cols-3 gap-7">
+      <div class="mt-16 grid md:grid-cols-3 grid-cols-1 gap-7 ">
         <div
           class="group duration-200 transition-all ease-in-out bg-white hover:bg-js_blue text-js_deep_blue rounded-md w-[300px] h-[105px] p-8 flex justify-between items-center">
           <div>
@@ -220,27 +229,27 @@
     </section>
 
     <!-- section 3 -->
-    <section class="py-24 px-56">
-      <div class="flex flex-col items-center justify-center">
-        <h2 class="text-3xl font-bold">Find jobs with 3 easy steps</h2>
-        <p class="mt-5 w-[40%] text-center text-js_deep_blue/65 text-sm leading-[25px]">
+    <section class="md:py-24 p-5 md:px-56">
+      <div class="flex flex-col items-center justify-center m-auto">
+        <h2 class="text-3xl font-bold text-center">Find jobs with 3 easy steps</h2>
+        <p class="mt-5 md:w-[40%] text-center text-js_deep_blue/65 text-sm leading-[25px]">
           With lots of unique blocks, you can easily build a page without
           coding. Build your next landing page.
         </p>
       </div>
 
-      <div class="mt-20 grid grid-cols-2">
+      <div class="mt-20 grid md:grid-cols-2 gap-5 md:gap-0">
         <!-- img div  -->
         <div>
           <img src="../job-site img/red-jacket.png"
-            alt="Man in red jacket with an interview invitation notification overlay" class="w-[530px] h-[614px]" />
+            alt="Man in red jacket with an interview invitation notification overlay" class="md:w-[530px] md:h-[614px]" />
         </div>
 
         <div class=" items-center justify-center m-auto space-y-10">
           <div class="flex items-center justify-center space-x-4">
             <span class="bg-js_blue rounded-full p-2 flex items-center justify-center w-10 h-10 text-white">1</span>
             <div>
-              <h3 class="font-bold text-lg">Search for a job</h3>
+              <h3 class="font-bold text-lg capitalize">Search for a job</h3>
               <p class="mt-3 w-72 text-js_deep_blue/65 text-sm leading-[25px]">
                 With lots of unique blocks, you can easily build a page without
                 coding.
@@ -251,7 +260,7 @@
           <div class="flex items-center justify-center space-x-4">
             <span class="bg-js_blue rounded-full p-2 flex items-center justify-center w-10 h-10 text-white">2</span>
             <div>
-              <h3 class="font-bold text-lg">Apply within our website</h3>
+              <h3 class="font-bold text-lg capitalize">Apply within our website</h3>
               <p class="mt-3 w-72 text-js_deep_blue/65 text-sm leading-[25px]">
                 With lots of unique blocks, you can easily build a page without
                 coding.
@@ -262,7 +271,7 @@
           <div class="flex items-center justify-center space-x-4">
             <span class="bg-js_blue rounded-full p-2 flex items-center justify-center w-10 h-10 text-white">3</span>
             <div>
-              <h3 class="font-bold text-lg">Get interview call</h3>
+              <h3 class="font-bold text-lg capitalize">Get interview call</h3>
               <p class="mt-3 w-72 text-js_deep_blue/65 text-sm leading-[25px]">
                 With lots of unique blocks, you can easily build a page without
                 coding.
@@ -275,26 +284,26 @@
     </section>
 
     <!-- section 4  -->
-    <section class="py-20 px-40 border-t border-t-js_offwhite ">
-      <div class="flex justify-between items-end m-auto w-[90%]">
+    <section class="md:py-20 md:px-40 p-5 border-t border-t-js_offwhite ">
+      <div class="flex md:justify-between justify-center md:items-end items-center m-auto w-[90%] mt-4">
         <div>
-          <h2 class="text-3xl font-bold">Featured jobs</h2>
-          <p class="mt-4 w-80 text-js_deep_blue/65">With lots of unique blocks, you can easily build a page without
+          <h2 class="text-3xl font-bold md:block flex justify-center capitalize">Featured jobs</h2>
+          <p class="mt-4 w-80 text-js_deep_blue/65 text-center md:text-start">With lots of unique blocks, you can easily build a page without
             coding.</p>
         </div>
 
-        <div class="bg-js_bg2 text-2xl">
+        <div class="bg-js_bg2 text-2xl  hidden md:flex">
           <i class='bx bx-left-arrow-alt cursor-pointer'></i>
           <i class='bx bx-right-arrow-alt cursor-pointer'></i>
         </div>
       </div>
 
       <!-- Boxes  -->
-      <div class="mt-20 flex space-x-9 items-start justify-center m-auto ">
+      <div class="mt-16 flex flex-col md:flex-row md:space-x-9 space-y-5 items-center justify-center m-auto ">
 
-        <div class="w-[250px] h-[270px]  border border-js_offwhite rounded-lg p-6 ">
+        <div class="w-[250px] h-[270px]  border border-js_offwhite rounded-lg p-6 md:justify-start justify-center md:items-start items-center flex flex-col">
           <small class="uppercase text-js_green font-bold ">full-time</small>
-          <h3 class="font-bold w-40 mt-3 mb-1 capitalize">senior software engineer</h3>
+          <h3 class="font-bold w-40 mt-3 mb-1 capitalize text-center md:text-start">senior software engineer</h3>
           <small class="text-js_deep_blue/65">New York, USA</small>
 
           <div class="flex items-center mt-10 space-x-2">
@@ -303,9 +312,9 @@
           </div>
         </div>
 
-        <div class="w-[250px] h-[270px]  border border-js_offwhite rounded-lg p-6 ">
+        <div class="w-[250px] h-[270px]  border border-js_offwhite rounded-lg p-6 md:justify-start justify-center md:items-start items-center flex flex-col">
           <small class="uppercase text-js_blue font-bold ">remote</small>
-          <h3 class="font-bold w-40 mt-3 mb-1 capitalize">Product Designer</h3>
+          <h3 class="font-bold w-40 mt-3 mb-1 capitalize text-center md:text-start">Product Designer</h3>
           <small class="text-js_deep_blue/65">Lake Colby, UK</small>
 
           <div class="flex items-center mt-16 space-x-2">
@@ -314,9 +323,9 @@
           </div>
         </div>
 
-        <div class="w-[250px] h-[270px]  border border-js_offwhite rounded-lg p-6 ">
+        <div class="w-[250px] h-[270px]  border border-js_offwhite rounded-lg p-6 md:justify-start justify-center md:items-start items-center flex flex-col">
           <small class="uppercase text-js_green font-bold ">full-time</small>
-          <h3 class="font-bold w-40 mt-3 mb-1 capitalize">UX Designer</h3>
+          <h3 class="font-bold w-40 mt-3 mb-1 capitalize text-center md:text-start">UX Designer</h3>
           <small class="text-js_deep_blue/65">California, USA</small>
 
           <div class="flex items-center mt-16 space-x-2">
@@ -325,9 +334,9 @@
           </div>
         </div>
 
-        <div class="w-[250px] h-[270px]  border border-js_offwhite rounded-lg p-6 ">
+        <div class="w-[250px] h-[270px]  border border-js_offwhite rounded-lg p-6 md:justify-start justify-center md:items-start items-center flex flex-col">
           <small class="uppercase text-js_red font-bold ">Part-time</small>
-          <h3 class="font-bold w-40 mt-3 mb-1 capitalize">Full-stack Web Developer</h3>
+          <h3 class="font-bold w-40 mt-3 mb-1 capitalize text-center md:text-start">Full-stack Web Developer</h3>
           <small class="text-js_deep_blue/65">Katlynburgh, Sweden</small>
 
           <div class="flex items-center mt-10 space-x-2">
@@ -339,17 +348,17 @@
     </section>
 
     <!-- section 5 -->
-    <section class="bg-js_bg2 py-28 px-56">
-      <div class="flex flex-col items-center justify-center">
-        <h2 class="text-3xl font-bold">News that helps</h2>
-        <p class="mt-5 w-[40%] text-center text-js_deep_blue/65  leading-[25px]">
+    <section class="bg-js_bg2 md:py-28 md:px-56 p-5">
+      <div class="flex flex-col items-center justify-center mt-4">
+        <h2 class="text-3xl font-bold ">News that helps</h2>
+        <p class="md:mt-5 mt-3 md:w-[40%] text-center text-js_deep_blue/65 leading-[25px] ">
           With lots of unique blocks, you can easily build a page without
           coding. Build your next landing page.
         </p>
       </div>
 
       <!-- img div  -->
-      <div class="mt-16 flex space-x-8">
+      <div class="mt-16 flex flex-col md:flex-row md:space-x-8 space-y-5 items-center justify-center m-auto">
         <div class="bg-white w-[350px] h-[450px] rounded-lg">
           <img src="../job-site img/jumping-dude.png" alt="A man jumping" class="w-[350px] h-[301px]">
 
@@ -381,8 +390,8 @@
     </section>
 
     <!-- section 6 -->
-    <section class="p-24 flex flex-col items-center justify-center m-auto">
-      <img src="../job-site img/message.png" alt="A message logo">
+    <section class="md:p-24 p-5 flex flex-col items-center justify-center m-auto">
+      <img src="../job-site img/message.png" alt="A message logo" class="mt-4 md:mt-0">
 
       <h2 class="mt-9 font-bold text-3xl">Get our latest updates</h2>
       <p class="text-js_deep_blue/60 mt-5 w-96 text-center tracking-wide">With lots of unique blocks, you can easily
@@ -390,10 +399,11 @@
         without coding. Build your next landing page.</p>
 
       <form action="submit"
-        class="mt-9 border border-js_offwhite p-1 w-[470px] h-[55px] rounded-lg flex items-center justify-between">
-        <input type="email" placeholder="Enter your email" class="h-[50px]">
-        <button class="bg-js_blue text-white w-[166px] h-[48px] rounded-lg">Subscribe</button>
+      class="mt-9 border border-js_offwhite p-3 md:w-[470px] md:h-[55px] w-full rounded-lg flex flex-col md:flex-row items-center md:justify-between space-y-2 md:space-y-0 space-x-2">
+      <input type="email" placeholder="Enter your email" class="md:h-[50px] h-[55px] w-full md:w-[70%] px-3 border border-gray-300 rounded-lg">
+      <button class="bg-js_blue text-white md:w-[166px] w-full h-[48px] rounded-lg">Subscribe</button>
       </form>
+
 
       <small class="mt-5 w-72 text-center text-js_deep_blue/60 tracking-wide">We’ll never share your details with third
         parties.
@@ -401,29 +411,28 @@
     </section>
   </main>
 
-  <footer class="bg-js_deep_blue text-white py-24 px-44 flex gap-32 items-center justify-center">
-    <div>
+  <footer class="bg-js_deep_blue text-white md:py-24 md:px-44 p-5 flex flex-col md:flex-row md:gap-32 items-center justify-center">
+    <div class="mt-8 md:mt-0">
       <span class="text-2xl font-bold">Brainwave.io</span>
-      <p class="text-white/65 my-6 w-80">With lots of unique blocks, you can easily build a page without coding. Build
+      <p class="text-white/65 my-6 w-80 ">With lots of unique blocks, you can easily build a page without coding. Build
         your next landing page.</p>
 
-      <span class="text-white/60 space-x-2.5 text-xl">
+      <span class="text-white/60 space-x-2.5 text-xl  duration-200 transition-all ease-in-out">
         <!-- twitter -->
-        <i class='bx bxl-twitter text-js_green'></i>
+        <i class='bx bxl-twitter hover:text-js_green'></i>
 
         <!-- facebook -->
-        <i class='bx bxl-facebook-square'></i>
+        <i class='bx bxl-facebook-square hover:text-js_green'></i>
 
         <!-- instagram -->
-        <i class='bx bxl-instagram'></i>
+        <i class='bx bxl-instagram hover:text-js_green'></i>
 
         <!-- linkeden -->
-        <i class='bx bxl-linkedin-square'></i>
+        <i class='bx bxl-linkedin-square hover:text-js_green'></i>
       </span>
     </div>
 
-    <div class="flex gap-20">
-
+    <div class="flex flex-col md:flex-row md:gap-20 gap-10 mt-16 text-center">
       <div class="space-y-5">
         <span class="text-white/65">Company</span>
         <ul class="space-y-2">
