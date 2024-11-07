@@ -17,6 +17,21 @@
         position: relative;
         z-index: 0;
       }
+      .overlay2 {
+        background: url(/images/wave\ 1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        position: relative;
+        z-index: 0;
+      }
+      .card {
+        border: 2px solid #e7e9ed;
+        height: auto;
+        width: 100%;
+        padding: 2rem;
+        border-radius: 12px;
+      }
     </style>
     <link href="./output.css" rel="stylesheet" />
   </head>
@@ -125,205 +140,454 @@
     </header>
     <!-- Partners -->
     <main>
-      <section class="py-24 px-6 w-full flex flex-col items-center justify-center">
+      <section
+        class="py-24 px-6 w-full flex flex-col items-center justify-center"
+      >
         <div class="flex flex-col items-center mx-auto text-center">
-          <h2 class="font-gilroy_bold text-[36px] w-full text-job_cat_bg">Big companies are here</h2>
-          <p class="font-gilroy_regular text-[19px] w-full leading-8 md:w-[90%] lg:w-[58%] text-job_cat_bg/70 mt-8">
+          <h2
+            class="font-gilroy_bold font-bold text-[36px] w-full text-job_cat_bg"
+          >
+            Big companies are here
+          </h2>
+          <p
+            class="font-gilroy_regular text-[19px] w-full leading-8 md:w-[90%] lg:w-[58%] text-job_cat_bg/70 mt-8"
+          >
             With lots of unique blocks, you can easily build a page without
             coding. Build your next consultancy website within few minutes. You
             have a business to run. Stop worring about cross-browser bugs,
             designing new pages.
           </p>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 place-items-center gap-8 mt-16 font-gilroy_regular">
-          <div class="w-36"><img src="/images/makeless.png" alt="makeless img"></div>
-          <div class="w-36"><img src="/images/cowork.png" alt="cowork"></div>
-          <div class="w-36"><img src="/images/greener.png" alt="greener"></div>
-          <div class="w-24"><img src="/images/saas.png" alt="saas"></div>
-          <div class="w-24"><img src="/images/dorfus.png" alt="dorfus"></div>
-          <div class="w-36"><img src="/images/askimat.png" alt="askimat"></div>
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 place-items-center gap-8 mt-16 font-gilroy_regular"
+        >
+          <div class="w-36">
+            <img src="/images/makeless.png" alt="makeless img" />
+          </div>
+          <div class="w-36"><img src="/images/cowork.png" alt="cowork" /></div>
+          <div class="w-36">
+            <img src="/images/greener.png" alt="greener" />
+          </div>
+          <div class="w-24"><img src="/images/saas.png" alt="saas" /></div>
+          <div class="w-24"><img src="/images/dorfus.png" alt="dorfus" /></div>
+          <div class="w-36">
+            <img src="/images/askimat.png" alt="askimat" />
+          </div>
         </div>
       </section>
       <!-- Jobs Section -->
       <section
-      class="bg-job_cat_bg min-h-screen px-[40px] md:px-32 py-24 text-white font-gilroy_regular"
-    >
-      <div
-        class="flex flex-col lg:flex-row items-start lg:items-end justify-between md:pt-16 lg:pt-0"
+        class="bg-job_cat_bg min-h-screen px-[40px] md:px-32 py-24 text-white font-gilroy_regular"
       >
-        <div>
-          <h2 class="text-[36px] font-gilroy_bold">Jobs by category</h2>
+        <div
+          class="flex flex-col lg:flex-row items-start lg:items-end justify-between md:pt-16 lg:pt-0"
+        >
+          <div>
+            <h2 class="text-[36px] font-gilroy_bold font-bold">
+              Jobs by category
+            </h2>
+            <p
+              class="text-[19px] leading-[25px] font-gilroy_regular text-white/40 w-full md:w-[65%] mt-4"
+            >
+              With lots of unique blocks, you can easily build a page without
+              coding.
+            </p>
+          </div>
+          <a
+            href="#"
+            class="text-job_cat_explore hover:text-job_cat_explore/70 duration-200 transition-all ease-linear mt-4 lg:mt-0"
+          >
+            <span>Explore all categories</span>
+            <i class="bx bx-right-arrow-alt"></i>
+          </a>
+        </div>
+        <!-- Boxes -->
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]"
+          >
+            <div>
+              <h4>Design</h4>
+              <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
+                47 Jobs
+              </p>
+            </div>
+            <div
+              class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+            >
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+          </div>
+          <div
+            class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]"
+          >
+            <div>
+              <h4>Marketing</h4>
+              <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
+                51 Jobs
+              </p>
+            </div>
+            <div
+              class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+            >
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+          </div>
+          <div
+            class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]"
+          >
+            <div>
+              <h4>Engineering</h4>
+              <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
+                89 Jobs
+              </p>
+            </div>
+            <div
+              class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+            >
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+          </div>
+          <div
+            class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]"
+          >
+            <div>
+              <h4>Mangement</h4>
+              <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
+                16 Jobs
+              </p>
+            </div>
+            <div
+              class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+            >
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+          </div>
+          <div
+            class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]"
+          >
+            <div>
+              <h4>Finance</h4>
+              <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
+                23 Jobs
+              </p>
+            </div>
+            <div
+              class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+            >
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+          </div>
+          <div
+            class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]"
+          >
+            <div>
+              <h4>Customer Support</h4>
+              <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
+                34 Jobs
+              </p>
+            </div>
+            <div
+              class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+            >
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="py-24 px-6 w-full flex flex-col items-center justify-center"
+      >
+        <!-- Find job section  -->
+        <div class="flex flex-col items-center mx-auto text-center">
+          <h2
+            class="font-gilroy_bold font-bold text-[36px] w-full text-job_cat_bg"
+          >
+            Find jobs with 3 easy steps
+          </h2>
           <p
-            class="text-[19px] leading-[25px] font-gilroy_regular text-white/40 w-full md:w-[65%] mt-4"
+            class="font-gilroy_regular text-[19px] w-full leading-8 md:w-[70%] lg:w-[58%] text-job_cat_bg/70 mt-8"
           >
             With lots of unique blocks, you can easily build a page without
-            coding.
+            coding. Build your next landing page.
           </p>
         </div>
-        <a
-          href="#"
-          class="text-job_cat_explore hover:text-job_cat_explore/70 duration-200 transition-all ease-linear mt-4 lg:mt-0"
-        >
-          <span>Explore all categories</span>
-          <i class="bx bx-right-arrow-alt"></i>
-        </a>
-      </div>
-      <!-- Boxes -->
-      <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div
-          class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]"
+          class="grid grid-cols-1 lg:grid-cols-2 justify-center place-items-center pt-16 gap-24 lg:gap-8"
         >
-          <div>
-            <h4>Design</h4>
-            <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
-              47 Jobs
-            </p>
-          </div>
           <div
-            class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
+            class="relative flex flex-col justify-center items-center lg:pl-32"
           >
-            <i class="bx bx-right-arrow-alt"></i>
-          </div>
-        </div>
-        <div
-          class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]"
-        >
-          <div>
-            <h4>Marketing</h4>
-            <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
-              51 Jobs
-            </p>
-          </div>
-          <div
-            class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
-          >
-            <i class="bx bx-right-arrow-alt"></i>
-          </div>
-        </div>
-        <div
-          class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]"
-        >
-          <div>
-            <h4>Engineering</h4>
-            <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
-              89 Jobs
-            </p>
-          </div>
-          <div
-            class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
-          >
-            <i class="bx bx-right-arrow-alt"></i>
-          </div>
-        </div>
-        <div
-          class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]"
-        >
-          <div>
-            <h4>Mangement</h4>
-            <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
-              16 Jobs
-            </p>
-          </div>
-          <div
-            class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
-          >
-            <i class="bx bx-right-arrow-alt"></i>
-          </div>
-        </div>
-        <div
-          class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]"
-        >
-          <div>
-            <h4>Finance</h4>
-            <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
-              23 Jobs
-            </p>
-          </div>
-          <div
-            class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
-          >
-            <i class="bx bx-right-arrow-alt"></i>
-          </div>
-        </div>
-        <div
-          class="group bg-job_cat_box_offwhite hover:bg-job_cat_box_blue text-job_cat_bg hover:text-job_cat_box_offwhite p-6 rounded-md h-auto flex items-center justify-between cursor-pointer min-h-[130px]"
-        >
-          <div>
-            <h4>Customer Support</h4>
-            <p class="text-[10px] text-job_cat_bg/50 group-hover:text-white">
-              34 Jobs
-            </p>
-          </div>
-          <div
-            class="bg-blue-400/40 text-job_cat_bg rounded-full items-center justify-center p-1 cursor-pointer hidden group-hover:flex"
-          >
-            <i class="bx bx-right-arrow-alt"></i>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="py-24 px-6 w-full flex flex-col items-center justify-center">
-      <!-- Find job section  -->
-       <div class="flex flex-col items-center mx-auto text-center">
-        <h2 class="font-gilroy_bold text-[36px] w-full text-job_cat_bg">Find jobs with 3 easy steps</h2>
-        <p class="font-gilroy_regular text-[19px] w-full leading-8 md:w-[70%] lg:w-[58%] text-job_cat_bg/70 mt-8"          >With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
-       </div>
-       <div class="grid grid-cols-1 lg:grid-cols-2 justify-center place-items-center pt-16 gap-24 lg:gap-8">
-        <div class="relative flex flex-col justify-center items-center lg:pl-32">
-          <div class=" relative w-[80] justify-center pl-6 lg:pl-0"> 
-            <img src="/images/smiling_guy.png" alt="smiling_guy" class="w-[70%] h-auto">
-            <div>
-              <img src="/images/smilly_guy_bg.png" alt="guy_bg" class="w-[75%] h-auto absolute top-8 left-10 -z-10 ">
+            <div class="relative w-[80] justify-center pl-6 lg:pl-0">
+              <img
+                src="/images/smiling_guy.png"
+                alt="smiling_guy"
+                class="w-[70%] h-auto"
+              />
+              <div>
+                <img
+                  src="/images/smilly_guy_bg.png"
+                  alt="guy_bg"
+                  class="w-[75%] h-auto absolute top-8 left-10 -z-10"
+                />
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-4 absolute top-3/4 md:top-2/3 lg:top-72 sm:left-10 md:left-20 z-40 bg-job_cat_bg rounded p-2 md:p-4"
+            >
+              <div class="bell">
+                <style>
+                  .bell {
+                    padding: 3px 5px;
+                    background-color: #68d585;
+                    border-radius: 999px;
+                    width: 25px;
+                  }
+                </style>
+                <img src="/images/bell-53.png" alt="" class="w-8" />
+              </div>
+              <div>
+                <h6
+                  class="text-[15px] text-job_cat_box_offwhite/30 font-gilroy_regular"
+                >
+                  New Invitation!
+                </h6>
+                <p
+                  class="text-[17px] text-job_cat_box_offwhite font-gilroy_bold"
+                >
+                  Interview invitation at Greener
+                </p>
+              </div>
             </div>
           </div>
-          <div class="flex items-center gap-4 absolute top-3/4 md:top-2/3 lg:top-72 sm:left-10 md:left-20 z-40 bg-job_cat_bg rounded p-2 md:p-4">
-            <div class="bell "> <style>
-              .bell {
-                padding: 3px 5px;
-                background-color: #68D585;
-                border-radius: 999px;
-                width: 25px; 
-              }
-            </style>
-              <img src="/images/bell-53.png" alt="" class="w-8">
+          <div class="mr-16 mt-16">
+            <div class="flex items-start gap-4">
+              <div class="w-14">
+                <img src="/images/one.png" alt="one" />
+              </div>
+              <div>
+                <h4 class="text-[21px] text-job_cat_bg font-gilroy_bold">
+                  Search for a job
+                </h4>
+                <p
+                  class="text-[17px] font-gilroy_regular text-job_cat_bg/60 mt-2 w-full md:w-[70%]"
+                >
+                  With lots of unique blocks, you can easily build a page
+                  without coding.
+                </p>
+              </div>
             </div>
-            <div>
-              <h6 class="text-[15px] text-job_cat_box_offwhite/30 font-gilroy_regular">New Invitation!</h6>
-              <p class="text-[17px] text-job_cat_box_offwhite font-gilroy_bold">Interview invitation at Greener</p>
+            <div class="flex items-start gap-4 mt-8">
+              <div class="w-14">
+                <img src="/images/two.png" alt="two" />
+              </div>
+              <div>
+                <h4 class="text-[21px] text-job_cat_bg font-gilroy_bold">
+                  Apply within our website
+                </h4>
+                <p
+                  class="text-[17px] font-gilroy_regular text-job_cat_bg/60 mt-2 w-full md:w-[70%]"
+                >
+                  With lots of unique blocks, you can easily build a page
+                  without coding.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 mt-8">
+              <div class="w-14">
+                <img src="/images/three.png" alt="three" />
+              </div>
+              <div>
+                <h4 class="text-[21px] text-job_cat_bg font-gilroy_bold">
+                  Get interview call
+                </h4>
+                <p
+                  class="text-[17px] font-gilroy_regular text-job_cat_bg/60 mt-2 w-full md:w-[70%]"
+                >
+                  With lots of unique blocks, you can easily build a page
+                  without coding.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="mr-16 mt-16">
-          <div class="flex items-start gap-4 ">
-            <div class=" w-14">
-            <img src="/images/one.png" alt="one">
-          </div>
+      </section>
+      <!-- Featured Jobs -->
+      <section class="overlay2 min-h-screen px-[40px] md:px-32 py-24">
+        <div
+          class="flex flex-col md:flex-row items-start md:items-end justify-between lg:pt-0"
+        >
           <div>
-            <h4 class="text-[21px] text-job_cat_bg font-gilroy_bold">Search for a job</h4>
-            <p class="text-[17px] font-gilroy_regular text-job_cat_bg/60 mt-2 w-full md:w-[70%]">With lots of unique blocks, you can easily build a page without coding. </p>
+            <h2 class="text-[36px] font-gilroy_bold font-bold text-job_cat_bg">
+              Featured jobs
+            </h2>
+            <p
+              class="text-[19px] leading-[25px] font-gilroy_regular w-full md:w-[80%] mt-4 text-job_cat_bg/60"
+            >
+              With lots of unique blocks, you can easily build a page without
+              coding.
+            </p>
           </div>
-          </div>
-          <div class="flex items-start gap-4 mt-8">
-            <div class=" w-14">
-            <img src="/images/two.png" alt="two">
-          </div>
-          <div>
-            <h4 class="text-[21px] text-job_cat_bg font-gilroy_bold">Apply within our website</h4>
-            <p class="text-[17px] font-gilroy_regular text-job_cat_bg/60 mt-2 w-full md:w-[70%]">With lots of unique blocks, you can easily build a page without coding. </p>
-          </div>
-          </div>
-          <div class="flex items-start gap-4 mt-8 ">
-            <div class=" w-14">
-            <img src="/images/three.png" alt="three">
-          </div>
-          <div>
-            <h4 class="text-[21px] text-job_cat_bg font-gilroy_bold">Get interview call</h4>
-            <p class="text-[17px] font-gilroy_regular text-job_cat_bg/60 mt-2 w-full md:w-[70%]">With lots of unique blocks, you can easily build a page without coding. </p>
-          </div>
+          <div class="w-24 mt-8 lg:mt-0">
+            <img src="/images/navarrow.png" alt="nav_arrow" />
           </div>
         </div>
-       </div>
-    </section>
+        <div
+          class="mt-24 grid grid-cols-1 lg:grid-cols-4 place-items-center justify-center gap-8"
+        >
+          <div class="card">
+            <h4 class="text-[13px] font-gilroy_bold text-job_cat_explore">
+              FULL-TIME
+            </h4>
+            <p
+              class="w-[100%] text-[21px] font-gilroy_bold text-job_cat_bg mt-4"
+            >
+              Senior Software Engineer
+            </p>
+            <p class="text-[15px] font-gilroy_regular text-job_cat_bg/40 mt-2">
+              New York, USA
+            </p>
+            <div class="flex items-center gap-2 mt-16">
+              <div class="">
+                <img src="/images/dorfus_logo.png" alt="dorfus" class="w-6" />
+              </div>
+              <p>Dorfus</p>
+            </div>
+          </div>
+          <div class="card">
+            <h4 class="text-[13px] font-gilroy_bold text-job_cat_box_blue">
+              REMOTE
+            </h4>
+            <p class="text-[20px] font-gilroy_bold text-job_cat_bg mt-4">
+              Product Designer
+            </p>
+            <p class="text-[15px] font-gilroy_regular text-job_cat_bg/40 mt-2">
+              Lake Colby, UK
+            </p>
+            <div class="flex items-center gap-2 mt-24">
+              <div>
+                <img src="/images/coworks_logo.png" alt="cowork" class="w-6" />
+              </div>
+              <p>Coworks</p>
+            </div>
+          </div>
+          <div class="card">
+            <h4 class="text-[13px] font-gilroy_bold text-job_cat_explore">
+              FULL-TIME
+            </h4>
+            <p
+              class="w-[90%] text-[21px] font-gilroy_bold text-job_cat_bg mt-4"
+            >
+              UX Designer
+            </p>
+            <p class="text-[15px] font-gilroy_regular text-job_cat_bg/40 mt-2">
+              California, USA
+            </p>
+            <div class="flex items-center gap-2 mt-24">
+              <div>
+                <img src="/images/askimat_logo.png" alt="cowork" class="w-6" />
+              </div>
+              <p>Askimat</p>
+            </div>
+          </div>
+          <div class="card">
+            <h4 class="text-[13px] font-gilroy_bold text-job_col_red">
+              PART-TIME
+            </h4>
+            <p
+              class="w-[90%] text-[21px] font-gilroy_bold text-job_cat_bg mt-4"
+            >
+              Full-stack Web Developer
+            </p>
+            <p class="text-[15px] font-gilroy_regular text-job_cat_bg/40 mt-2">
+              Katlynburgh, Sweden
+            </p>
+            <div class="flex items-center gap-2 mt-16">
+              <div>
+                <img src="/images/greener_logo.png" alt="greener" class="w-6" />
+              </div>
+              <p>Greener</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Career Section -->
+      <section class="bg-career_bg pt-16 px-6 py-24">
+        <div class="flex flex-col items-center text-center">
+          <h2
+            class="font-gilroy_bold font-bold text-[36px] w-full text-job_cat_bg"
+          >
+            News that helps
+          </h2>
+          <p
+            class="font-gilroy_regular text-[19px] w-full leading-8 sm:w-[80%] md:w-[70%] lg:w-[40%] text-job_cat_bg/70 mt-4"
+          >
+            With lots of unique blocks, you can easily build a page without
+            coding. Build your next landing page.
+          </p>
+        </div>
+        <div
+          class="mt-24 grid grid-cols-1 lg:grid-cols-3 place-items-center justify-center gap-8"
+        >
+          <div class="flex flex-col items-start bg-career_text_bg rounded">
+            <div class="w-full flex justify-center">
+              <img
+                src="/images/jumping_guy.png"
+                alt="jumping_guy"
+                class="w-[100%] rounded"
+              />
+            </div>
+            <div class=" pl-8 mt-8 ">
+              <h5 class="text-[15px] font-gilroy_regular text-job_cat_bg/60">
+                Career
+              </h5>
+              <p
+              class="text-[21px] font-gilroy_bold leading-8 w-[80%] text-job_cat_bg mb-8 mt-2"
+              >
+                How to win any job you want. Get started with 5 steps.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col items-start bg-career_text_bg rounded">
+            <div class="w-full flex justify-center">
+              <img
+                src="/images/depressed_lady.png"
+                alt="depressed_lady"
+                class="w-[100%] rounded"
+              />
+            </div>
+            <div class=" pl-8 mt-8 ">
+              <h5 class="text-[15px] font-gilroy_regular text-job_cat_bg/60">
+                Lifestyle
+              </h5>
+              <p
+              class="text-[21px] font-gilroy_bold leading-8 w-[80%] text-job_cat_bg mb-8 mt-2"
+              >
+                10 ways to reduce your office work depression.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col items-start bg-career_text_bg rounded">
+            <div class="w-full flex justify-center">
+              <img
+                src="/images/team_image.png"
+                alt="team_image"
+                class="w-[100%] rounded"
+              />
+            </div>
+            <div class="pl-8 mt-8 ">
+              <h5 class="text-[15px] font-gilroy_regular text-job_cat_bg/60">
+                Career
+              </h5>
+              <p
+                class="text-[21px] font-gilroy_bold leading-8 w-[80%] text-job_cat_bg mb-8 mt-2"
+              >
+                Why should you work as a team even on small projects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

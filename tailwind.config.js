@@ -10,6 +10,10 @@ module.exports = {
         job_cat_explore: "#68D585",
         hrd_bg_col: "#68D5851A",
         bg_form_col: "#473BF0",
+        border_col: "#E7E9ED",
+        job_col_red: "#F64B4B",
+        career_bg: "#F4F7FA",
+        career_text_bg: "#FFFFFF",
         
       },
       fontFamily: {
