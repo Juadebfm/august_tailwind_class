@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'rel='stylesheet'>
+  </head>
+  <body>
+    <header
+      class="bg-[#68D58523]"
+      style="
+        background-image: url(./background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+      "
+    >
+      <nav class="p-6 items-center flex justify-between">
+        <span class="text-[30px]">Brainwave.io</span>
+        <div class="hidden md:flex">
+          <ul class="flex gap-6">
+            <li><a href="#">Demos</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="hidden md:flex gap-6">
+          <button>Login</button>
+          <button>Sign Up</button>
+        </div>
+        <div class="text-[40px] flex md:hidden">
+            <i class='bx bx-menu'></i>
+          </div>
+      </nav>
+      <section class="py-20 md:px-32 px-8">
+        <div class="w-[100%] lg:w-[50%]">
+          <h1
+            class="text-[30px] lg:text-[65px] leading-[35px] md:leading-[75px] font-semibold"
+          >
+            Find a dream job that changes life.
+          </h1>
+          <p class="mt-5 text-[18px]">
+            With lots of unique blocks, you can easily build a page without
+            coding. Build your next job website.
+          </p>
+        </div>
+        <div>
+          <form class="p-6 md:w-[720px] w-[100%] bg-[#473BF0] flex flex-col md:flex-row gap-6 rounded-md my-8">
+            <input
+              type="text"
+              placeholder="Enter your email"
+              class="p-3 rounded-md text-black w-[100%] md:w-[250px]"
+            />
+            <select class="p-3 rounded-md text-black w-[250px]">
+              <option value="0">City</option>
+              <option value="1">Name of city</option>
+            </select>
+            <button class="py-3 rounded-md px-14 text-white bg-black">
+              Search
+            </button>
+          </form>
+          <small>Try Product Designer, Software Engineer etc.</small>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="py-20 md:px-32 px-8 bg-white">
+        <div class="w-[100%] md:w-[70%] m-auto text-center">
+          <h2
+            class="text-[30px] mb-8 lg:text-[45px] leading-[55px] leading-[35px] font-semibold"
+          >
+            Big companies are here
+          </h2>
+          <p class="text-[18px] leading-[35px] font-semibold">
+            With lots of unique blocks, you can easily build a page without
+            coding. Build your <br>next consultancy website within few minutes. You
+            have a business to run. Stop <br>worring about cross-browser bugs,
+            designing new pages.
+          </p>
+        </div>
+        <div class="grid grid-cols-3 gap-8 md:p-32 p-8">
+          <div class="md:w-[60%] w-[80%]"><img src="./makeless.png" alt="" /></div>
+          <div class="md:w-[60%] w-[80%]"><img src="./coworkers.png" alt="" /></div>
+          <div class="md:w-[60%] w-[80%]"><img src="./greener.png" alt="" /></div>
+          <div class="md:w-[60%] w-[80%]"><img src="./saas_today.png" alt="" /></div>
+          <div class="md:w-[60%] w-[80%]"><img src="./dorfus.png" alt="" /></div>
+          <div class="md:w-[60%] w-[80%]"><img src="./askimar.png" alt="" /></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

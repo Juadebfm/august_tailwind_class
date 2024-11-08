@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@font-face {
+  font-family: "Gilroy_Regular";
+  src: url(./Fonts/Gilroy-Regular.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Semibold";
+  src: url(./Fonts/Gilroy-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Bold";
+  src: url(./Fonts/Gilroy-Bold.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Black";
+  src: url(./Fonts/Gilroy-Black.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Light";
+  src: url(./Fonts/Gilroy-Light.ttf);
+}
