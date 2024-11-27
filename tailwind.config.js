@@ -17,6 +17,7 @@ module.exports = {
         p_red: " #F64B4B",
         p_fifth_sec: " #F4F7FA",
         p_white: "#fff",
+        p_red: " #F64B4B",
       },
       backgroundImage: {
         p_header_img: ["BG(7).png"],

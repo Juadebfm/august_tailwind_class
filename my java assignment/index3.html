@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style3.css" />
+    <!-- js -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- personal_style -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              myred: "#00ff00",
+              myblue: "#0000ff",
+              my_blue_span: "#1E0E62",
+              my_ul: "#15143966",
+              my_lb: "#25DAC5",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="px-12 py-8">
+      <nav class="flex items-center justify-between">
+        <span class="text-[26px] text-my_blue_span font-bold">startup 3</span>
+
+        <ul
+          class="hidden items-center justify-center gap-4 lg:text-my_ul lg:text-[16px] lg:flex text-my_blue_span text-[26px] lg:font-semibold font-bold"
+          id="sidebar"
+        >
+          <li><a href="/">Home</a></li>
+          <li><a href="/">Features</a></li>
+          <li><a href="/"></a>Blog</li>
+          <li><a href="/"></a>Shop</li>
+          <i class="bx bx-search"></i>
+        </ul>
+        <div class="flex gap-4" id="sidebar1">
+          <button class="text-my_ul hidden lg:block">sign up</button>
+          <button
+            class="hidden lg:block bg-my_lb text-white rounded-full px-4 pt-2 pb-2"
+          >
+            sign in
+          </button>
+        </div>
+        <div class="block lg:hidden" id="togglemenu">
+          <i class="bx bx-menu text-black text-[36px]"></i>
+        </div>
+
+        <div class="hidden text-3xl cursor-pointer" id="closeMenu">
+          <i class="bx bx-x"></i>
+        </div>
+      </nav>
+    </header>
+  </body>
+  <script src="./class.js"></script>
+</html>
