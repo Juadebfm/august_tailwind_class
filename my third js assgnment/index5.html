@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style5.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              myred: "#00ff00",
+              myblue: "#0000ff",
+              my_blue_span: "#1E0E62",
+              my_ul: "#15143966",
+              my_lb: "#25DAC5",
+              my_blue: "#473BF0",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-blue-900">
+    <header class="lg:px-24 px-8 py-4">
+      <nav class="flex items-center justify-between">
+        <ul class="flex gap-4 text-white font-bold">
+          <span class="lg:text-[18px] text-[36px]">Startup 3</span>
+          <li class="lg:block hidden"><a href="/">products</a></li>
+          <li class="lg:block hidden"><a href="/">pricing</a></li>
+          <li class="lg:block hidden"><a href="/">Community</a></li>
+        </ul>
+        <div class="lg:flex text-white gap-5 lg:block hidden" id="sidebar">
+          <button class="lg:text-[16px] text-[36px]">Help</button>
+          <button class="lg:text-[16px] text-[36px]">Login</button>
+          <button
+            class="border-white/75 border-[2px] rounded-full px-4 pt-2 pb-2 lg:text-[16px] text-[36px]"
+          >
+            Sign up
+          </button>
+        </div>
+
+        <div class="block lg:hidden" id="togglemenu">
+          <i class="bx bx-menu text-black text-[36px]"></i>
+        </div>
+
+        <div class="hidden text-3xl cursor-pointer" id="closeMenu">
+          <i class="bx bx-x"></i>
+        </div>
+      </nav>
+    </header>
+  </body>
+  <script src="./pro.js"></script>
+</html>
