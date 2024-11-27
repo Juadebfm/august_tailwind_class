@@ -28,6 +28,10 @@
   font-family: "Gilroy_Thin";
   src: url(./gilroy/Gilroy-Thin.ttf);
 }
+
+header {
+  background-image: url(images/BG.png);
+}
 .linne:hover > div:last-child {
     display: flex;
 }
