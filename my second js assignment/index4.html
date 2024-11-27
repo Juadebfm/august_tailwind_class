@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style4.css" />
+    <!-- js -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- personal_style -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              myred: "#00ff00",
+              myblue: "#0000ff",
+              my_blue_span: "#1E0E62",
+              my_ul: "#15143966",
+              my_lb: "#25DAC5",
+              my_blue: "#473BF0",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-blue-800">
+    <header class="lg:px-12 py-4 px-4">
+      <nav class="flex items-center justify-between">
+        <span class="font-bold lg:text-[18px] text-[30px] text-white"
+          >Startup 3</span
+        >
+        <div class="gap-4 font-bold lg:block hidden" i id="sidebar">
+          <button class="text-white">subscribe</button>
+          <button class="text-white">Features</button>
+          <button class="bg-my_blue text-white rounded-full px-4 pt-2 pb-2">
+            Sign up
+          </button>
+        </div>
+        <div id="togglemenu" class="block lg:hidden">
+          <i class="bx bx-menu text-black text-[36px]"></i>
+        </div>
+
+        <div class="hidden text-3xl cursor-pointer" id="closeMenu">
+          <i class="bx bx-x"></i>
+        </div>
+      </nav>
+    </header>
+  </body>
+  <script src="./app.js"></script>
+</html>

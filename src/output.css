@@ -812,10 +812,6 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-cols-5{
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
 .flex-col{
   flex-direction: column;
 }
@@ -1004,6 +1000,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.pb-12{
+  padding-bottom: 3rem;
+}
+
 .pb-16{
   padding-bottom: 4rem;
 }
@@ -1042,10 +1042,6 @@ video {
 
 .pt-8{
   padding-top: 2rem;
-}
-
-.pb-12{
-  padding-bottom: 3rem;
 }
 
 .text-center{
