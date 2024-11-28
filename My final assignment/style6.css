@@ -1,0 +1,16 @@
+.show {
+  position: absolute;
+  right: 5px;
+  top: 120px;
+  display: block !important;
+  display: flex;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 40px 10px;
+}
+.showClose {
+  display: block !important;
+}
+.hideMenu {
+  display: none !important;
+}
